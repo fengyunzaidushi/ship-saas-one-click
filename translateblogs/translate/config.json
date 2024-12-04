@@ -1,0 +1,8 @@
+{
+    "api_key": "sk-xxx",
+    "target_lang": "简体中文",
+    "input_dir": "./docs",
+    "output_dir": "./translated",
+    "model": "gpt-4o-2024-11-20",
+    "max_workers": 3
+  }

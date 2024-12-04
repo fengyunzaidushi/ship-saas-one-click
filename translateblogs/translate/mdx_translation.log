@@ -1,0 +1,881 @@
+2024-11-21 07:36:01,690 - INFO - 找到 2 个MDX文件
+2024-11-21 07:36:01,690 - INFO - 开始翻译文件: docs\post1.mdx
+2024-11-21 07:36:06,331 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:36:06,341 - ERROR - 解析翻译后的frontmatter失败: while scanning for the next token
+found character '`' that cannot start any token
+  in "<unicode string>", line 1, column 1:
+    ```yaml
+    ^
+2024-11-21 07:36:09,738 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:36:09,744 - INFO - 已完成文件翻译: post1.mdx
+2024-11-21 07:36:10,746 - INFO - 开始翻译文件: docs\post2.mdx
+2024-11-21 07:36:12,156 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:36:12,157 - ERROR - 解析翻译后的frontmatter失败: while scanning for the next token
+found character '`' that cannot start any token
+  in "<unicode string>", line 1, column 1:
+    ```yaml
+    ^
+2024-11-21 07:36:19,735 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:36:19,735 - INFO - 已完成文件翻译: post2.mdx
+2024-11-21 07:40:34,099 - INFO - 找到 1 个MDX文件
+2024-11-21 07:40:34,139 - INFO - 开始翻译文件: docs\post2.mdx
+2024-11-21 07:41:58,492 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:41:58,524 - ERROR - 解析翻译后的frontmatter失败: while scanning for the next token
+found character '`' that cannot start any token
+  in "<unicode string>", line 1, column 1:
+    ```yaml
+    ^
+2024-11-21 08:16:35,153 - INFO - 输入目录: E:\share\github\011\cursor_doc_pre\cursordoc
+2024-11-21 08:16:35,161 - INFO - 输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 08:16:35,164 - INFO - 找到 0 个MDX文件
+2024-11-21 08:16:35,164 - WARNING - 未找到任何MDX文件
+2024-11-21 08:17:45,591 - INFO - 输入目录: E:\share\github\011\cursor_docs
+2024-11-21 08:17:45,591 - INFO - 输出目录: E:\share\github\011\cursor_docs_trans
+2024-11-21 08:17:45,735 - INFO - 找到 3 个MDX文件
+2024-11-21 08:17:51,513 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 08:17:51,516 - INFO - 已完成文件翻译: advanced\ai-review.mdx
+2024-11-21 08:17:55,810 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 08:17:55,810 - INFO - 已完成文件翻译: advanced\api-keys.mdx
+2024-11-21 08:18:01,325 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 08:18:01,325 - INFO - 已完成文件翻译: advanced\models.mdx
+2024-11-21 08:18:02,330 - INFO - 翻译完成，输出目录: E:\share\github\011\cursor_docs_trans
+2024-11-21 09:51:40,745 - INFO - 输入目录: E:\share\github\011\cursor_doc_pre\cursordoc
+2024-11-21 09:51:40,760 - INFO - MDX输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 09:51:40,760 - INFO - MD输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans_md
+2024-11-21 09:51:40,760 - INFO - 找到 0 个MDX文件
+2024-11-21 09:51:40,760 - WARNING - 未找到任何MDX文件
+2024-11-21 09:53:40,612 - INFO - 输入目录: E:\share\github\011\cursor_doc_pre\cursordoc
+2024-11-21 09:53:40,626 - INFO - MDX输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 09:53:40,626 - INFO - MD输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans_md
+2024-11-21 09:53:40,626 - INFO - 找到 1 个MDX文件
+2024-11-21 09:53:45,210 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:53:45,213 - INFO - 已完成文件翻译: advanced\ai-review.mdx
+2024-11-21 09:53:46,215 - INFO - 翻译完成
+2024-11-21 09:53:46,216 - INFO - MDX输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 09:53:46,216 - INFO - MD输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans_md
+2024-11-21 09:55:13,795 - INFO - 输入目录: E:\share\github\011\cursor_doc_pre\cursordoc
+2024-11-21 09:55:13,797 - INFO - MDX输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 09:55:13,797 - INFO - MD输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans_md
+2024-11-21 09:55:13,805 - INFO - 找到 34 个MDX文件
+2024-11-21 09:55:20,586 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:20,589 - INFO - 已完成文件翻译: advanced\api-keys.mdx
+2024-11-21 09:55:29,691 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:29,698 - INFO - 已完成文件翻译: advanced\models.mdx
+2024-11-21 09:55:33,140 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:33,145 - INFO - 已完成文件翻译: advanced\shadow-workspace.mdx
+2024-11-21 09:55:37,301 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:37,301 - INFO - 已完成文件翻译: chat\apply.mdx
+2024-11-21 09:55:42,204 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:42,205 - INFO - 已完成文件翻译: chat\codebase.mdx
+2024-11-21 09:55:47,805 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:47,812 - INFO - 已完成文件翻译: chat\customize.mdx
+2024-11-21 09:55:56,936 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:55:56,936 - INFO - 已完成文件翻译: chat\overview.mdx
+2024-11-21 09:56:03,802 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:03,803 - INFO - 已完成文件翻译: cmdk\overview.mdx
+2024-11-21 09:56:06,583 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:06,588 - INFO - 已完成文件翻译: cmdk\terminal-cmdk.mdx
+2024-11-21 09:56:10,337 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:10,337 - INFO - 已完成文件翻译: context\codebase-indexing.mdx
+2024-11-21 09:56:13,837 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:13,837 - INFO - 已完成文件翻译: context\ignore-files.mdx
+2024-11-21 09:56:16,742 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:16,750 - INFO - 已完成文件翻译: context\rules-for-ai.mdx
+2024-11-21 09:56:21,376 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:21,382 - INFO - 已完成文件翻译: get-started\migrate-from-vscode.mdx
+2024-11-21 09:56:29,322 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:29,330 - INFO - 已完成文件翻译: get-started\usage.mdx
+2024-11-21 09:56:34,442 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:34,445 - INFO - 已完成文件翻译: get-started\what-is-cursor.mdx
+2024-11-21 09:56:36,998 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:37,006 - INFO - 已完成文件翻译: miscellaneous\auto-terminal-debug.mdx
+2024-11-21 09:56:38,916 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:38,918 - INFO - 已完成文件翻译: miscellaneous\keyboard-shortcuts.mdx
+2024-11-21 09:56:46,950 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:46,959 - INFO - 已完成文件翻译: privacy\privacy.mdx
+2024-11-21 09:56:51,955 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:51,964 - INFO - 已完成文件翻译: tab\advanced-features.mdx
+2024-11-21 09:56:56,057 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:56:56,067 - INFO - 已完成文件翻译: tab\from-gh-copilot.mdx
+2024-11-21 09:57:02,210 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:02,217 - INFO - 已完成文件翻译: tab\overview.mdx
+2024-11-21 09:57:10,462 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:10,468 - INFO - 已完成文件翻译: troubleshooting\common-issues.mdx
+2024-11-21 09:57:18,420 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:18,429 - INFO - 已完成文件翻译: troubleshooting\troubleshooting-guide.mdx
+2024-11-21 09:57:20,818 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:20,823 - INFO - 已完成文件翻译: context\@-symbols\@-chat.mdx
+2024-11-21 09:57:24,843 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:24,850 - INFO - 已完成文件翻译: context\@-symbols\@-code.mdx
+2024-11-21 09:57:28,079 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:28,087 - INFO - 已完成文件翻译: context\@-symbols\@-codebase.mdx
+2024-11-21 09:57:30,452 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:30,464 - INFO - 已完成文件翻译: context\@-symbols\@-definitions.mdx
+2024-11-21 09:57:34,869 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:34,880 - INFO - 已完成文件翻译: context\@-symbols\@-docs.mdx
+2024-11-21 09:57:39,115 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:39,124 - INFO - 已完成文件翻译: context\@-symbols\@-files.mdx
+2024-11-21 09:57:44,082 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:44,090 - INFO - 已完成文件翻译: context\@-symbols\@-folders.mdx
+2024-11-21 09:57:47,580 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:47,584 - INFO - 已完成文件翻译: context\@-symbols\@-git.mdx
+2024-11-21 09:57:50,295 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:50,303 - INFO - 已完成文件翻译: context\@-symbols\@-link.mdx
+2024-11-21 09:57:53,328 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:53,336 - INFO - 已完成文件翻译: context\@-symbols\@-web.mdx
+2024-11-21 09:57:59,824 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 09:57:59,833 - INFO - 已完成文件翻译: context\@-symbols\basic.mdx
+2024-11-21 09:58:00,833 - INFO - 翻译完成
+2024-11-21 09:58:00,835 - INFO - MDX输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans
+2024-11-21 09:58:00,835 - INFO - MD输出目录: E:\share\github\011\cursor_doc_pre\cursordoc_trans_md
+2024-11-22 17:39:57,045 - INFO - 输入目录: E:\share\github\011\next.js\docs
+2024-11-22 17:39:57,056 - INFO - MDX输出目录: E:\share\github\011\next.js\docs_trans
+2024-11-22 17:39:57,056 - INFO - MD输出目录: E:\share\github\011\next.js\docs_trans_md
+2024-11-22 17:39:57,061 - INFO - 找到 312 个MDX文件
+2024-11-22 17:40:18,644 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:40:18,667 - INFO - 已完成文件翻译: 01-getting-started\01-installation.mdx
+2024-11-22 17:40:53,385 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:40:53,407 - INFO - 已完成文件翻译: 01-getting-started\02-project-structure.mdx
+2024-11-22 17:40:55,447 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:40:55,455 - INFO - 已完成文件翻译: 01-getting-started\index.mdx
+2024-11-22 17:41:43,184 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:41:43,301 - INFO - 已完成文件翻译: 02-app\index.mdx
+2024-11-22 17:41:46,915 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:41:46,925 - INFO - 已完成文件翻译: 03-pages\index.mdx
+2024-11-22 17:41:54,411 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:41:54,419 - INFO - 已完成文件翻译: 04-architecture\accessibility.mdx
+2024-11-22 17:42:12,914 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:42:12,988 - INFO - 已完成文件翻译: 04-architecture\fast-refresh.mdx
+2024-11-22 17:42:16,023 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:42:16,032 - INFO - 已完成文件翻译: 04-architecture\index.mdx
+2024-11-22 17:42:54,949 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:42:54,974 - INFO - 已完成文件翻译: 04-architecture\nextjs-compiler.mdx
+2024-11-22 17:43:02,893 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:43:02,976 - INFO - 已完成文件翻译: 04-architecture\supported-browsers.mdx
+2024-11-22 17:43:15,403 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:43:15,483 - INFO - 已完成文件翻译: 04-architecture\turbopack.mdx
+2024-11-22 17:43:57,390 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:43:57,427 - INFO - 已完成文件翻译: 05-community\01-contribution-guide.mdx
+2024-11-22 17:44:05,479 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:44:05,489 - INFO - 已完成文件翻译: 05-community\index.mdx
+2024-11-22 17:44:12,697 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:44:12,708 - INFO - 已完成文件翻译: 02-app\01-building-your-application\index.mdx
+2024-11-22 17:44:34,058 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:44:34,136 - INFO - 已完成文件翻译: 02-app\02-api-reference\06-create-next-app.mdx
+2024-11-22 17:45:31,383 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:45:31,402 - INFO - 已完成文件翻译: 02-app\02-api-reference\07-edge.mdx
+2024-11-22 17:46:18,282 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:46:18,285 - INFO - 已完成文件翻译: 02-app\02-api-reference\08-next-cli.mdx
+2024-11-22 17:46:25,865 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:46:25,866 - INFO - 已完成文件翻译: 02-app\02-api-reference\index.mdx
+2024-11-22 17:46:39,503 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:46:39,504 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\01-defining-routes.mdx
+2024-11-22 17:47:12,423 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:47:12,425 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\02-pages-and-layouts.mdx
+2024-11-22 17:47:55,908 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:47:55,913 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\03-linking-and-navigating.mdx
+2024-11-22 17:48:16,594 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:48:16,597 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\04-loading-ui-and-streaming.mdx
+2024-11-22 17:48:40,592 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:48:40,600 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\05-error-handling.mdx
+2024-11-22 17:49:46,635 - INFO - Retrying request to /chat/completions in 0.435213 seconds
+2024-11-22 17:50:48,204 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:50:48,212 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\06-redirecting.mdx
+2024-11-22 17:51:00,446 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:51:00,448 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\07-route-groups.mdx
+2024-11-22 17:51:22,606 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:51:22,607 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\08-colocation.mdx
+2024-11-22 17:51:47,470 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:51:47,476 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\09-dynamic-routes.mdx
+2024-11-22 17:52:31,637 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:52:31,638 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\10-parallel-routes.mdx
+2024-11-22 17:52:44,748 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:52:44,750 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\11-intercepting-routes.mdx
+2024-11-22 17:53:22,533 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:53:22,535 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\12-route-handlers.mdx
+2024-11-22 17:54:28,844 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:54:28,853 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\13-middleware.mdx
+2024-11-22 17:54:42,351 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:54:42,359 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\14-internationalization.mdx
+2024-11-22 17:55:04,943 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:55:04,951 - INFO - 已完成文件翻译: 02-app\01-building-your-application\01-routing\index.mdx
+2024-11-22 17:55:51,666 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:55:51,677 - INFO - 已完成文件翻译: 02-app\01-building-your-application\02-data-fetching\01-fetching-caching-and-revalidating.mdx
+2024-11-22 17:57:14,926 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:57:14,935 - INFO - 已完成文件翻译: 02-app\01-building-your-application\02-data-fetching\02-server-actions-and-mutations.mdx
+2024-11-22 17:58:03,455 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:58:03,462 - INFO - 已完成文件翻译: 02-app\01-building-your-application\02-data-fetching\03-patterns.mdx
+2024-11-22 17:58:05,641 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:58:05,647 - INFO - 已完成文件翻译: 02-app\01-building-your-application\02-data-fetching\index.mdx
+2024-11-22 17:58:34,350 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:58:34,360 - INFO - 已完成文件翻译: 02-app\01-building-your-application\03-rendering\01-server-components.mdx
+2024-11-22 17:58:48,380 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:58:48,385 - INFO - 已完成文件翻译: 02-app\01-building-your-application\03-rendering\02-client-components.mdx
+2024-11-22 17:59:35,830 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:59:35,841 - INFO - 已完成文件翻译: 02-app\01-building-your-application\03-rendering\03-composition-patterns.mdx
+2024-11-22 17:59:48,280 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 17:59:48,287 - INFO - 已完成文件翻译: 02-app\01-building-your-application\03-rendering\04-edge-and-nodejs-runtimes.mdx
+2024-11-22 18:00:04,998 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:00:04,999 - INFO - 已完成文件翻译: 02-app\01-building-your-application\03-rendering\index.mdx
+2024-11-22 18:01:21,965 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:01:21,975 - INFO - 已完成文件翻译: 02-app\01-building-your-application\04-caching\index.mdx
+2024-11-22 18:02:06,193 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:02:06,201 - INFO - 已完成文件翻译: 02-app\01-building-your-application\05-styling\01-css-modules.mdx
+2024-11-22 18:02:21,312 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:02:21,320 - INFO - 已完成文件翻译: 02-app\01-building-your-application\05-styling\02-tailwind-css.mdx
+2024-11-22 18:03:39,500 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:03:39,507 - INFO - 已完成文件翻译: 02-app\01-building-your-application\05-styling\03-css-in-js.mdx
+2024-11-22 18:03:49,233 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:03:49,240 - INFO - 已完成文件翻译: 02-app\01-building-your-application\05-styling\04-sass.mdx
+2024-11-22 18:03:53,836 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:03:53,837 - INFO - 已完成文件翻译: 02-app\01-building-your-application\05-styling\index.mdx
+2024-11-22 18:04:26,040 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:04:26,041 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\01-images.mdx
+2024-11-22 18:05:05,328 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:05:05,336 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\02-videos.mdx
+2024-11-22 18:06:00,517 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:06:00,526 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\03-fonts.mdx
+2024-11-22 18:06:36,537 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:06:36,546 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\04-metadata.mdx
+2024-11-22 18:07:07,156 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:07:07,158 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\05-scripts.mdx
+2024-11-22 18:07:13,211 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:07:13,213 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\06-bundle-analyzer.mdx
+2024-11-22 18:07:32,775 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:07:32,782 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\07-lazy-loading.mdx
+2024-11-22 18:07:52,899 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:07:52,905 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\08-analytics.mdx
+2024-11-22 18:08:07,445 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:08:07,453 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\09-instrumentation.mdx
+2024-11-22 18:08:39,461 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:08:39,464 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\10-open-telemetry.mdx
+2024-11-22 18:08:59,051 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:08:59,057 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\11-static-assets.mdx
+2024-11-22 18:09:42,671 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:09:42,674 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\12-third-party-libraries.mdx
+2024-11-22 18:09:54,935 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:09:54,939 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\13-memory-usage.mdx
+2024-11-22 18:10:14,720 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:10:14,722 - INFO - 已完成文件翻译: 02-app\01-building-your-application\06-optimizing\index.mdx
+2024-11-22 18:10:56,072 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:10:56,076 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\01-typescript.mdx
+2024-11-22 18:11:22,681 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:11:22,688 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\02-eslint.mdx
+2024-11-22 18:11:57,570 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:11:57,579 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\03-environment-variables.mdx
+2024-11-22 18:12:09,920 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:12:09,922 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\04-absolute-imports-and-module-aliases.mdx
+2024-11-22 18:12:56,286 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:12:56,295 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\05-mdx.mdx
+2024-11-22 18:13:04,088 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:13:04,090 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\06-src-directory.mdx
+2024-11-22 18:13:36,294 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:13:36,294 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\11-draft-mode.mdx
+2024-11-22 18:13:59,710 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:13:59,712 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\15-content-security-policy.mdx
+2024-11-22 18:14:05,606 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:14:05,608 - INFO - 已完成文件翻译: 02-app\01-building-your-application\07-configuring\index.mdx
+2024-11-22 18:14:27,127 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:14:27,132 - INFO - 已完成文件翻译: 02-app\01-building-your-application\08-testing\01-vitest.mdx
+2024-11-22 18:15:18,464 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:15:18,472 - INFO - 已完成文件翻译: 02-app\01-building-your-application\08-testing\02-jest.mdx
+2024-11-22 18:15:30,463 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:15:30,465 - INFO - 已完成文件翻译: 02-app\01-building-your-application\08-testing\03-playwright.mdx
+2024-11-22 18:15:56,114 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:15:56,125 - INFO - 已完成文件翻译: 02-app\01-building-your-application\08-testing\04-cypress.mdx
+2024-11-22 18:16:03,679 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:16:03,680 - INFO - 已完成文件翻译: 02-app\01-building-your-application\08-testing\index.mdx
+2024-11-22 18:17:29,359 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:17:29,362 - INFO - 已完成文件翻译: 02-app\01-building-your-application\09-authentication\index.mdx
+2024-11-22 18:18:19,487 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:18:19,496 - INFO - 已完成文件翻译: 02-app\01-building-your-application\10-deploying\01-production-checklist.mdx
+2024-11-22 18:19:01,098 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:19:01,100 - INFO - 已完成文件翻译: 02-app\01-building-your-application\10-deploying\02-static-exports.mdx
+2024-11-22 18:19:44,109 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:19:44,112 - INFO - 已完成文件翻译: 02-app\01-building-your-application\10-deploying\index.mdx
+2024-11-22 18:20:11,789 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:20:11,793 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\01-codemods.mdx
+2024-11-22 18:21:48,805 - INFO - Retrying request to /chat/completions in 0.431858 seconds
+2024-11-22 18:23:48,903 - INFO - Retrying request to /chat/completions in 0.771234 seconds
+2024-11-22 18:25:38,821 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:25:38,831 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\02-app-router-migration.mdx
+2024-11-22 18:25:55,143 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:25:55,151 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\03-version-14.mdx
+2024-11-22 18:27:06,990 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:27:06,996 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\04-from-vite.mdx
+2024-11-22 18:28:14,624 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:28:14,633 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\05-from-create-react-app.mdx
+2024-11-22 18:30:06,792 - INFO - 输入目录: E:\share\github\011\next.js\docs
+2024-11-22 18:30:06,801 - INFO - MDX输出目录: E:\share\github\011\next.js\docs_trans
+2024-11-22 18:30:06,801 - INFO - MD输出目录: E:\share\github\011\next.js\docs_trans_md
+2024-11-22 18:30:06,805 - INFO - 找到 229 个MDX文件
+2024-11-22 18:30:06,814 - INFO - 翻译完成
+2024-11-22 18:30:06,814 - INFO - MDX输出目录: E:\share\github\011\next.js\docs_trans
+2024-11-22 18:30:06,815 - INFO - MD输出目录: E:\share\github\011\next.js\docs_trans_md
+2024-11-22 18:33:38,615 - INFO - 输入目录: E:\share\github\011\next.js\docs
+2024-11-22 18:33:38,623 - INFO - MDX输出目录: E:\share\github\011\next.js\docs_trans
+2024-11-22 18:33:38,623 - INFO - MD输出目录: E:\share\github\011\next.js\docs_trans_md
+2024-11-22 18:33:38,627 - INFO - 找到 229 个MDX文件
+2024-11-22 18:33:41,365 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:41,735 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:41,750 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:41,915 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:42,934 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:43,673 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:44,831 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:45,055 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:45,189 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:46,479 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:46,556 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:48,236 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:48,325 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:48,660 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:49,093 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:49,589 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:51,356 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:51,497 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:52,224 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:52,960 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:53,318 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:53,321 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:53,563 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:54,011 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:54,208 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:55,270 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:55,955 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:56,334 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:56,572 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:57,006 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:57,027 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:57,528 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:58,130 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:58,425 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:58,485 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:58,513 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,106 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,228 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,342 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,389 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,489 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:33:59,990 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,002 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,339 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,343 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,916 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,990 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:00,998 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:01,096 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:01,457 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:01,902 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:02,202 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:03,256 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:03,329 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:03,362 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:04,049 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,018 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,457 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,459 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\index.mdx
+2024-11-22 18:34:05,535 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,536 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\index.mdx
+2024-11-22 18:34:05,556 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,557 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\index.mdx
+2024-11-22 18:34:05,834 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,836 - INFO - 已完成文件翻译: 02-app\02-api-reference\01-components\index.mdx
+2024-11-22 18:34:05,953 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:05,954 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\draft-mode.mdx
+2024-11-22 18:34:06,009 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:06,011 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\loading.mdx
+2024-11-22 18:34:06,724 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:06,726 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\page.mdx
+2024-11-22 18:34:06,936 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:06,937 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\image-response.mdx
+2024-11-22 18:34:07,155 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:07,156 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\not-found.mdx
+2024-11-22 18:34:07,333 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:07,335 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\instrumentation.mdx
+2024-11-22 18:34:07,458 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:07,461 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\not-found.mdx
+2024-11-22 18:34:08,348 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:08,349 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\generate-sitemaps.mdx
+2024-11-22 18:34:08,731 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:08,733 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\template.mdx
+2024-11-22 18:34:08,789 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:08,791 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\unstable_noStore.mdx
+2024-11-22 18:34:08,893 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:08,893 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\permanentRedirect.mdx
+2024-11-22 18:34:09,389 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:09,391 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\default.mdx
+2024-11-22 18:34:09,897 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:09,898 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\next-response.mdx
+2024-11-22 18:34:10,031 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:10,032 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\headers.mdx
+2024-11-22 18:34:10,089 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:10,091 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\revalidateTag.mdx
+2024-11-22 18:34:10,352 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:10,354 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\route.mdx
+2024-11-22 18:34:11,000 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:11,002 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\unstable_cache.mdx
+2024-11-22 18:34:11,183 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:11,187 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\next-request.mdx
+2024-11-22 18:34:11,794 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:11,796 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\error.mdx
+2024-11-22 18:34:12,194 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:12,198 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\appDir.mdx
+2024-11-22 18:34:12,990 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:12,991 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\fetch.mdx
+2024-11-22 18:34:13,103 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:13,104 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\generate-image-metadata.mdx
+2024-11-22 18:34:13,914 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:13,916 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\revalidatePath.mdx
+2024-11-22 18:34:15,206 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:15,211 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-selected-layout-segments.mdx
+2024-11-22 18:34:15,616 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:15,617 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\distDir.mdx
+2024-11-22 18:34:15,889 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:15,891 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-params.mdx
+2024-11-22 18:34:16,045 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:16,050 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\layout.mdx
+2024-11-22 18:34:16,865 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:16,869 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\eslint.mdx
+2024-11-22 18:34:17,110 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:17,113 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:17,126 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\compress.mdx
+2024-11-22 18:34:17,130 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\generateBuildId.mdx
+2024-11-22 18:34:17,953 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:17,958 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-pathname.mdx
+2024-11-22 18:34:18,661 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:18,664 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\crossOrigin.mdx
+2024-11-22 18:34:18,916 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:18,918 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\basePath.mdx
+2024-11-22 18:34:20,326 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:20,331 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\generate-static-params.mdx
+2024-11-22 18:34:20,824 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:20,826 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\cookies.mdx
+2024-11-22 18:34:21,135 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:21,137 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\generateEtags.mdx
+2024-11-22 18:34:21,668 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:21,669 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\userAgent.mdx
+2024-11-22 18:34:22,161 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:22,163 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\httpAgentOptions.mdx
+2024-11-22 18:34:22,939 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:22,945 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\generate-viewport.mdx
+2024-11-22 18:34:23,266 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:23,268 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\redirect.mdx
+2024-11-22 18:34:23,281 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:23,282 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\mdxRs.mdx
+2024-11-22 18:34:23,627 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:23,629 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-router.mdx
+2024-11-22 18:34:23,746 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:23,748 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\devIndicators.mdx
+2024-11-22 18:34:24,014 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:24,015 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\middleware.mdx
+2024-11-22 18:34:24,811 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:24,815 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\logging.mdx
+2024-11-22 18:34:24,825 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:24,826 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\instrumentationHook.mdx
+2024-11-22 18:34:25,067 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:25,073 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\onDemandEntries.mdx
+2024-11-22 18:34:25,609 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:25,611 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\poweredByHeader.mdx
+2024-11-22 18:34:25,789 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:25,790 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\optimizePackageImports.mdx
+2024-11-22 18:34:25,859 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:25,864 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\assetPrefix.mdx
+2024-11-22 18:34:26,058 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:26,063 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\env.mdx
+2024-11-22 18:34:27,091 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,096 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\productionBrowserSourceMaps.mdx
+2024-11-22 18:34:27,336 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,342 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\serverActions.mdx
+2024-11-22 18:34:27,382 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,383 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\reactStrictMode.mdx
+2024-11-22 18:34:27,468 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,473 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\trailingSlash.mdx
+2024-11-22 18:34:27,544 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,549 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\typedRoutes.mdx
+2024-11-22 18:34:27,853 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:27,854 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\index.mdx
+2024-11-22 18:34:28,039 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,244 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,246 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\partial-prerendering.mdx
+2024-11-22 18:34:28,246 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\transpilePackages.mdx
+2024-11-22 18:34:28,321 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,323 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\staleTimes.mdx
+2024-11-22 18:34:28,347 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,348 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\incrementalCacheHandlerPath.mdx
+2024-11-22 18:34:28,652 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,653 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\typescript.mdx
+2024-11-22 18:34:28,972 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:28,973 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\serverComponentsExternalPackages.mdx
+2024-11-22 18:34:29,016 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:29,017 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\pageExtensions.mdx
+2024-11-22 18:34:29,247 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:29,249 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\index.mdx
+2024-11-22 18:34:29,423 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:29,424 - INFO - 已完成文件翻译: 03-pages\02-api-reference\04-create-next-app.mdx
+2024-11-22 18:34:29,807 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:29,813 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-selected-layout-segment.mdx
+2024-11-22 18:34:30,658 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:30,660 - INFO - 已完成文件翻译: 03-pages\02-api-reference\index.mdx
+2024-11-22 18:34:31,054 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:31,056 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\index.mdx
+2024-11-22 18:34:31,348 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:31,350 - INFO - 已完成文件翻译: 03-pages\02-api-reference\06-edge.mdx
+2024-11-22 18:34:31,396 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:31,398 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-report-web-vitals.mdx
+2024-11-22 18:34:31,578 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:31,580 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\manifest.mdx
+2024-11-22 18:34:31,930 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:31,932 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\exportPathMap.mdx
+2024-11-22 18:34:32,044 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:32,048 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\04-redirecting.mdx
+2024-11-22 18:34:32,772 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:32,776 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\urlImports.mdx
+2024-11-22 18:34:32,942 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:32,945 - INFO - 已完成文件翻译: 03-pages\02-api-reference\05-next-cli.mdx
+2024-11-22 18:34:32,952 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:32,955 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\webVitalsAttribution.mdx
+2024-11-22 18:34:33,272 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:33,278 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\11-middleware.mdx
+2024-11-22 18:34:33,751 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:33,758 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\turbo.mdx
+2024-11-22 18:34:33,782 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:33,787 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\robots.mdx
+2024-11-22 18:34:34,626 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:34,632 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\index.mdx
+2024-11-22 18:34:34,650 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:34,653 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\01-server-side-rendering.mdx
+2024-11-22 18:34:34,684 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:34,689 - INFO - 已完成文件翻译: 02-app\02-api-reference\01-components\link.mdx
+2024-11-22 18:34:35,023 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,028 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\06-edge-and-nodejs-runtimes.mdx
+2024-11-22 18:34:35,503 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,508 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\webpack.mdx
+2024-11-22 18:34:35,519 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,522 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\route-segment-config.mdx
+2024-11-22 18:34:35,735 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,738 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,752 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\05-custom-app.mdx
+2024-11-22 18:34:35,756 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\02-dynamic-routes.mdx
+2024-11-22 18:34:35,948 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:35,954 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\output.mdx
+2024-11-22 18:34:36,097 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:36,102 - INFO - 已完成文件翻译: 02-app\02-api-reference\01-components\script.mdx
+2024-11-22 18:34:36,389 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:36,390 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\04-styling\01-css-modules.mdx
+2024-11-22 18:34:36,870 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:36,876 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\index.mdx
+2024-11-22 18:34:36,877 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:36,890 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:36,902 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\08-custom-error.mdx
+2024-11-22 18:34:36,905 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\04-styling\02-tailwind-css.mdx
+2024-11-22 18:34:37,389 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:37,395 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\04-styling\03-css-in-js.mdx
+2024-11-22 18:34:38,329 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:38,334 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\05-client-side-rendering.mdx
+2024-11-22 18:34:38,399 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:38,401 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\04-styling\index.mdx
+2024-11-22 18:34:38,849 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:38,851 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\04-styling\04-sass.mdx
+2024-11-22 18:34:39,176 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:39,180 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:39,183 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\06-custom-document.mdx
+2024-11-22 18:34:39,187 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\02-fonts.mdx
+2024-11-22 18:34:40,058 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:40,063 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\05-client-side.mdx
+2024-11-22 18:34:40,358 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:40,364 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\03-scripts.mdx
+2024-11-22 18:34:40,545 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:40,549 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\images.mdx
+2024-11-22 18:34:40,687 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:40,689 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\03-linking-and-navigating.mdx
+2024-11-22 18:34:40,770 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:40,776 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\09-instrumentation.mdx
+2024-11-22 18:34:41,422 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:41,424 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\07-analytics.mdx
+2024-11-22 18:34:42,146 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:42,147 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\08-lazy-loading.mdx
+2024-11-22 18:34:42,266 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:42,272 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\06-bundle-analyzer.mdx
+2024-11-22 18:34:42,835 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:42,835 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\01-images.mdx
+2024-11-22 18:34:42,985 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:42,989 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\index.mdx
+2024-11-22 18:34:43,175 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:43,177 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\index.mdx
+2024-11-22 18:34:43,630 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:43,632 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\05-static-assets.mdx
+2024-11-22 18:34:43,685 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:43,688 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\11-third-party-libraries.mdx
+2024-11-22 18:34:43,891 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:43,892 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\05-optimizing\10-open-telemetry.mdx
+2024-11-22 18:34:44,018 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,021 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\04-absolute-imports-and-module-aliases.mdx
+2024-11-22 18:34:44,273 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,475 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,481 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\03-environment-variables.mdx
+2024-11-22 18:34:44,483 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\02-eslint.mdx
+2024-11-22 18:34:44,732 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,737 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\05-from-create-react-app.mdx
+2024-11-22 18:34:44,955 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,961 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\01-pages-and-layouts.mdx
+2024-11-22 18:34:44,974 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,979 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\app-icons.mdx
+2024-11-22 18:34:44,989 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:44,990 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\01-typescript.mdx
+2024-11-22 18:34:45,225 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,256 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,258 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\04-automatic-static-optimization.mdx
+2024-11-22 18:34:45,258 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\06-mdx.mdx
+2024-11-22 18:34:45,485 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,490 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\05-src-directory.mdx
+2024-11-22 18:34:45,812 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,817 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\headers.mdx
+2024-11-22 18:34:45,829 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,834 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\07-testing\02-jest.mdx
+2024-11-22 18:34:45,917 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:45,919 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\15-content-security-policy.mdx
+2024-11-22 18:34:46,103 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,121 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,124 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\03-get-server-side-props.mdx
+2024-11-22 18:34:46,124 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\07-testing\03-playwright.mdx
+2024-11-22 18:34:46,342 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,347 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\index.mdx
+2024-11-22 18:34:46,648 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,653 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\07-testing\04-cypress.mdx
+2024-11-22 18:34:46,814 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,819 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\07-testing\01-vitest.mdx
+2024-11-22 18:34:46,883 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,887 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\08-authentication\index.mdx
+2024-11-22 18:34:46,913 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:46,917 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\02-get-static-paths.mdx
+2024-11-22 18:34:47,028 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,034 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\09-deploying\01-production-checklist.mdx
+2024-11-22 18:34:47,206 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,207 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\09-deploying\02-static-exports.mdx
+2024-11-22 18:34:47,348 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,353 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\07-testing\index.mdx
+2024-11-22 18:34:47,357 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\02-app-router-migration.mdx
+2024-11-22 18:34:47,363 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\09-deploying\index.mdx
+2024-11-22 18:34:47,368 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,369 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\01-codemods.mdx
+2024-11-22 18:34:47,376 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\03-from-vite.mdx
+2024-11-22 18:34:47,378 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,379 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\08-babel.mdx
+2024-11-22 18:34:47,384 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\04-incremental-static-regeneration.mdx
+2024-11-22 18:34:47,387 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\sitemap.mdx
+2024-11-22 18:34:47,389 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\05-version-14.mdx
+2024-11-22 18:34:47,392 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\04-from-create-react-app.mdx
+2024-11-22 18:34:47,394 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\use-search-params.mdx
+2024-11-22 18:34:47,394 - INFO - 已完成文件翻译: 02-app\01-building-your-application\11-upgrading\04-from-vite.mdx
+2024-11-22 18:34:47,396 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\12-error-handling.mdx
+2024-11-22 18:34:47,398 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\09-version-10.mdx
+2024-11-22 18:34:47,399 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\09-deploying\03-multi-zones.mdx
+2024-11-22 18:34:47,401 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\index.mdx
+2024-11-22 18:34:47,401 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\index.mdx
+2024-11-22 18:34:47,403 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\image.mdx
+2024-11-22 18:34:47,403 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\script.mdx
+2024-11-22 18:34:47,404 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\link.mdx
+2024-11-22 18:34:47,405 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\font.mdx
+2024-11-22 18:34:47,406 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\03-forms-and-mutations.mdx
+2024-11-22 18:34:47,407 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\index.mdx
+2024-11-22 18:34:47,408 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\next-request.mdx
+2024-11-22 18:34:47,409 - INFO - 已完成文件翻译: 02-app\02-api-reference\02-file-conventions\01-metadata\opengraph-image.mdx
+2024-11-22 18:34:47,410 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\02-rendering\02-static-site-generation.mdx
+2024-11-22 18:34:47,412 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\next-response.mdx
+2024-11-22 18:34:47,412 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\use-report-web-vitals.mdx
+2024-11-22 18:34:47,413 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\09-post-css.mdx
+2024-11-22 18:34:47,413 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\07-amp.mdx
+2024-11-22 18:34:47,414 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\assetPrefix.mdx
+2024-11-22 18:34:47,415 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\basePath.mdx
+2024-11-22 18:34:47,415 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\head.mdx
+2024-11-22 18:34:47,415 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\03-data-fetching\01-get-static-props.mdx
+2024-11-22 18:34:47,415 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\compress.mdx
+2024-11-22 18:34:47,415 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\crossOrigin.mdx
+2024-11-22 18:34:47,416 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\devIndicators.mdx
+2024-11-22 18:34:47,416 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\10-internationalization.mdx
+2024-11-22 18:34:47,416 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\distDir.mdx
+2024-11-22 18:34:47,416 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\redirects.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\09-deploying\04-ci-build-caching.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\10-custom-server.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\get-initial-props.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\userAgent.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\11-draft-mode.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\13-debugging.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\headers.mdx
+2024-11-22 18:34:47,417 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\generateBuildId.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\env.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\exportPathMap.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\instrumentationHook.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\eslint.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\generateEtags.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\onDemandEntries.mdx
+2024-11-22 18:34:47,418 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\optimizePackageImports.mdx
+2024-11-22 18:34:47,419 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\images.mdx
+2024-11-22 18:34:47,419 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\use-amp.mdx
+2024-11-22 18:34:47,419 - INFO - 已完成文件翻译: 02-app\02-api-reference\01-components\font.mdx
+2024-11-22 18:34:47,419 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\01-routing\07-api-routes.mdx
+2024-11-22 18:34:47,419 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\poweredByHeader.mdx
+2024-11-22 18:34:47,677 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,685 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\output.mdx
+2024-11-22 18:34:47,702 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,709 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\rewrites.mdx
+2024-11-22 18:34:47,870 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:47,872 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\pageExtensions.mdx
+2024-11-22 18:34:48,049 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,059 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\productionBrowserSourceMaps.mdx
+2024-11-22 18:34:48,081 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,090 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\index.mdx
+2024-11-22 18:34:48,237 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,247 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\trailingSlash.mdx
+2024-11-22 18:34:48,351 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,354 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\httpAgentOptions.mdx
+2024-11-22 18:34:48,382 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,384 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\turbo.mdx
+2024-11-22 18:34:48,522 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,527 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\redirects.mdx
+2024-11-22 18:34:48,687 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,697 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\06-version-13.mdx
+2024-11-22 18:34:48,829 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,838 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\urlImports.mdx
+2024-11-22 18:34:48,947 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:48,956 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\webpack.mdx
+2024-11-22 18:34:48,999 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:49,009 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\webVitalsAttribution.mdx
+2024-11-22 18:34:49,323 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:49,333 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\typescript.mdx
+2024-11-22 18:34:49,397 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:49,399 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\transpilePackages.mdx
+2024-11-22 18:34:49,516 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:49,518 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\reactStrictMode.mdx
+2024-11-22 18:34:49,668 - INFO - Retrying request to /chat/completions in 0.489060 seconds
+2024-11-22 18:34:49,679 - INFO - Retrying request to /chat/completions in 0.377623 seconds
+2024-11-22 18:34:51,062 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:51,065 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\get-server-side-props.mdx
+2024-11-22 18:34:51,298 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:51,301 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\07-version-12.mdx
+2024-11-22 18:34:53,117 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:53,120 - INFO - 已完成文件翻译: 03-pages\02-api-reference\03-next-config-js\runtime-configuration.mdx
+2024-11-22 18:34:53,721 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:53,732 - INFO - 已完成文件翻译: 02-app\02-api-reference\05-next-config-js\rewrites.mdx
+2024-11-22 18:34:54,920 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:54,931 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\10-version-9.mdx
+2024-11-22 18:34:55,098 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:55,107 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\10-upgrading\08-version-11.mdx
+2024-11-22 18:34:59,686 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:34:59,697 - INFO - 已完成文件翻译: 03-pages\01-building-your-application\06-configuring\14-preview-mode.mdx
+2024-11-22 18:35:02,470 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:35:02,478 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\get-static-props.mdx
+2024-11-22 18:35:05,391 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:35:05,401 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\get-static-paths.mdx
+2024-11-22 18:35:49,737 - INFO - Retrying request to /chat/completions in 0.399412 seconds
+2024-11-22 18:35:49,768 - INFO - Retrying request to /chat/completions in 0.477668 seconds
+2024-11-22 18:36:40,929 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:36:40,940 - INFO - 已完成文件翻译: 03-pages\02-api-reference\02-functions\use-router.mdx
+2024-11-22 18:36:46,483 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:36:46,495 - INFO - 已完成文件翻译: 02-app\02-api-reference\04-functions\generate-metadata.mdx
+2024-11-22 18:36:49,790 - INFO - Retrying request to /chat/completions in 0.789579 seconds
+2024-11-22 18:37:04,732 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:37:04,734 - INFO - 已完成文件翻译: 03-pages\02-api-reference\01-components\image-legacy.mdx
+2024-11-22 18:38:38,030 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 18:38:38,033 - INFO - 已完成文件翻译: 02-app\02-api-reference\01-components\image.mdx
+2024-11-22 18:38:38,033 - INFO - 翻译完成
+2024-11-22 18:38:38,033 - INFO - MDX输出目录: E:\share\github\011\next.js\docs_trans
+2024-11-22 18:38:38,033 - INFO - MD输出目录: E:\share\github\011\next.js\docs_trans_md
+2024-11-22 21:47:39,132 - INFO - 输入目录: E:\share\github\011\next-intl\docs\src\pages\docs
+2024-11-22 21:47:39,147 - INFO - MDX输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans
+2024-11-22 21:47:39,147 - INFO - MD输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans_md
+2024-11-22 21:47:39,150 - INFO - 找到 0 个MDX文件
+2024-11-22 21:47:39,150 - WARNING - 未找到任何MDX文件
+2024-11-22 21:49:30,057 - INFO - 输入目录: E:\share\github\011\next-intl\docs\src\pages\docs
+2024-11-22 21:49:30,057 - INFO - MDX输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans
+2024-11-22 21:49:30,057 - INFO - MD输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans_md
+2024-11-22 21:49:30,057 - INFO - 找到 28 个MDX文件
+2024-11-22 21:49:33,972 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:33,975 - INFO - 已完成文件翻译: usage.mdx
+2024-11-22 21:49:34,467 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:34,468 - INFO - 已完成文件翻译: getting-started.mdx
+2024-11-22 21:49:34,849 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:34,852 - INFO - 已完成文件翻译: environments.mdx
+2024-11-22 21:49:35,076 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:35,085 - INFO - 已完成文件翻译: workflows.mdx
+2024-11-22 21:49:35,086 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:35,095 - INFO - 已完成文件翻译: getting-started\app-router.mdx
+2024-11-22 21:49:35,636 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:35,638 - INFO - 已完成文件翻译: workflows\linting.mdx
+2024-11-22 21:49:36,747 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:36,747 - INFO - 已完成文件翻译: workflows\vscode-integration.mdx
+2024-11-22 21:49:37,287 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:37,290 - INFO - 已完成文件翻译: workflows\storybook.mdx
+2024-11-22 21:49:38,612 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:38,616 - INFO - 已完成文件翻译: workflows\typescript.mdx
+2024-11-22 21:49:38,764 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:38,776 - INFO - 已完成文件翻译: environments\mdx.mdx
+2024-11-22 21:49:39,510 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:39,511 - INFO - 已完成文件翻译: environments\runtime-requirements.mdx
+2024-11-22 21:49:40,085 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:40,095 - INFO - 已完成文件翻译: getting-started\pages-router.mdx
+2024-11-22 21:49:40,599 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:40,610 - INFO - 已完成文件翻译: usage\lists.mdx
+2024-11-22 21:49:41,473 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:41,475 - INFO - 已完成文件翻译: usage\numbers.mdx
+2024-11-22 21:49:43,587 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:43,594 - INFO - 已完成文件翻译: environments\core-library.mdx
+2024-11-22 21:49:44,787 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:44,791 - INFO - 已完成文件翻译: environments\error-files.mdx
+2024-11-22 21:49:48,725 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:48,729 - INFO - 已完成文件翻译: getting-started\app-router\without-i18n-routing.mdx
+2024-11-22 21:49:52,332 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:52,341 - INFO - 已完成文件翻译: workflows\localization-management.mdx
+2024-11-22 21:49:54,016 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:49:54,019 - INFO - 已完成文件翻译: usage\dates-times.mdx
+2024-11-22 21:50:00,541 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:00,551 - INFO - 已完成文件翻译: getting-started\app-router\with-i18n-routing.mdx
+2024-11-22 21:50:01,841 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:01,850 - INFO - 已完成文件翻译: environments\actions-metadata-route-handlers.mdx
+2024-11-22 21:50:02,216 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:02,219 - INFO - 已完成文件翻译: routing\navigation.mdx
+2024-11-22 21:50:06,432 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:06,434 - INFO - 已完成文件翻译: design-principles.mdx
+2024-11-22 21:50:19,387 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:19,397 - INFO - 已完成文件翻译: routing\middleware.mdx
+2024-11-22 21:50:27,826 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:27,840 - INFO - 已完成文件翻译: environments\server-client-components.mdx
+2024-11-22 21:50:29,120 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:29,123 - INFO - 已完成文件翻译: usage\configuration.mdx
+2024-11-22 21:50:32,451 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:32,459 - INFO - 已完成文件翻译: routing.mdx
+2024-11-22 21:50:33,137 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-22 21:50:33,139 - INFO - 已完成文件翻译: usage\messages.mdx
+2024-11-22 21:50:33,139 - INFO - 翻译完成
+2024-11-22 21:50:33,139 - INFO - MDX输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans
+2024-11-22 21:50:33,139 - INFO - MD输出目录: E:\share\github\011\next-intl\docs\src\pages\docs_trans_md
+2024-11-24 15:35:15,621 - INFO - 输入目录: E:\share\github\011\google_auth_demo\data\blog\en
+2024-11-24 15:35:15,629 - INFO - MDX输出目录: E:\share\github\011\google_auth_demo\data\blog\en_trans
+2024-11-24 15:35:15,629 - INFO - MD输出目录: E:\share\github\011\google_auth_demo\data\blog\en_trans_md
+2024-11-24 15:35:15,629 - INFO - 找到 11 个MDX文件
+2024-11-24 15:35:18,145 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:18,148 - INFO - 已完成文件翻译: my-fancy-title.mdx
+2024-11-24 15:35:20,269 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:20,276 - INFO - 已完成文件翻译: nested-route\introducing-multi-part-posts-with-nested-routing.mdx
+2024-11-24 15:35:21,365 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:21,368 - INFO - 已完成文件翻译: code-sample.mdx
+2024-11-24 15:35:23,429 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:23,432 - INFO - 已完成文件翻译: guide-to-using-images-in-nextjs.mdx
+2024-11-24 15:35:26,080 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:26,089 - INFO - 已完成文件翻译: pictures-of-canada.mdx
+2024-11-24 15:35:28,227 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:28,239 - INFO - 已完成文件翻译: github-markdown-guide.mdx
+2024-11-24 15:35:28,790 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:28,796 - INFO - 已完成文件翻译: deriving-ols-estimator.mdx
+2024-11-24 15:35:34,610 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:34,620 - INFO - 已完成文件翻译: the-time-machine.mdx
+2024-11-24 15:35:38,992 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:39,002 - INFO - 已完成文件翻译: release-of-tailwind-nextjs-starter-blog-v2.0.mdx
+2024-11-24 15:35:39,531 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:39,533 - INFO - 已完成文件翻译: introducing-tailwind-nextjs-starter-blog.mdx
+2024-11-24 15:35:52,385 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-24 15:35:52,397 - INFO - 已完成文件翻译: new-features-in-v1.mdx
+2024-11-24 15:35:52,398 - INFO - 翻译完成
+2024-11-24 15:35:52,399 - INFO - MDX输出目录: E:\share\github\011\google_auth_demo\data\blog\en_trans
+2024-11-24 15:35:52,400 - INFO - MD输出目录: E:\share\github\011\google_auth_demo\data\blog\en_trans_md

@@ -1,0 +1,489 @@
+{
+  "image": {
+    "hero": {
+      "title": "Transform Your Creative Process",
+      "subtitle": "Professional image processing platform for creators and teams",
+      "cta": "Start Creating"
+    },
+    "features": {
+      "title": "Powerful Features for Image Creation",
+      "subtitle": "Everything you need to create stunning visuals",
+      "items": [
+        {
+          "title": "AI-Powered Editing",
+          "description": "Advanced AI tools that help you enhance images in seconds with professional-grade results"
+        },
+        {
+          "title": "Real-time Collaboration",
+          "description": "Work together with your team in real-time, share feedback, and manage revisions efficiently"
+        },
+        {
+          "title": "Asset Management",
+          "description": "Organize your images with smart galleries, tags, and powerful search capabilities"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "Loved by Creative Professionals",
+      "items": [
+        {
+          "content": "This platform has revolutionized how our creative team works. The AI features save us hours of editing time.",
+          "name": "Sarah Johnson",
+          "title": "Creative Director, DesignCo",
+          "image": "testimonial1.jpg"
+        },
+        {
+          "content": "The collaboration features are game-changing. We can now work seamlessly with clients across the globe.",
+          "name": "Mike Chen",
+          "title": "Photography Lead, Studio X",
+          "image": "testimonial2.jpg"
+        },
+        {
+          "content": "Asset management has never been easier. Finding and organizing thousands of images is now a breeze.",
+          "name": "Emily Davis",
+          "title": "Content Manager, MediaPro",
+          "image": "testimonial3.jpg"
+        }
+      ]
+    }
+  },
+  "text": {
+    "hero": {
+      "title": "Write Better Content, Faster",
+      "subtitle": "AI-powered writing assistant for teams and individuals",
+      "cta": "Start Writing",
+      "secondary_cta": "Learn More"
+    },
+    "features": {
+      "title": "Streamline Your Writing Process",
+      "subtitle": "Everything you need to create compelling content",
+      "items": [
+        {
+          "title": "Smart Writing Assistant",
+          "description": "Get real-time suggestions for grammar, style, and tone to improve your writing instantly"
+        },
+        {
+          "title": "Templates Library",
+          "description": "Choose from hundreds of professionally crafted templates for any type of content"
+        },
+        {
+          "title": "Content Analytics",
+          "description": "Understand your audience better with detailed readability and engagement metrics"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Writers Say",
+      "items": [
+        {
+          "content": "The AI suggestions have improved my writing significantly. It's like having a professional editor by my side.",
+          "name": "Robert Wilson",
+          "title": "Content Writer, TechBlog"
+        },
+        {
+          "content": "The templates save me hours of preparation time. I can focus on what matters - the actual writing.",
+          "name": "Lisa Brown",
+          "title": "Marketing Manager, StartupX"
+        },
+        {
+          "content": "Analytics help me understand what resonates with my audience. My engagement rates have doubled.",
+          "name": "James Miller",
+          "title": "Freelance Writer"
+        }
+      ]
+    }
+  },
+  "public": {
+    "auth": {
+      "signIn": "Sign in",
+      "signingIn": "Signing in...",
+      "signOut": "Sign out"
+    },
+    "Blog": {
+      "allPosts": "All Posts",
+      "publishedOn": "Published on",
+      "viewTaggedPosts": "View posts tagged {tag}"
+    },
+    "Pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "pageInfo": "{current} of {total}"
+    }
+  },
+  "saas_one": {
+    "header": {
+      "brand": {
+        "title": "Novel Name Generator",
+        "avatar": {
+          "src": "https://placehold.co/128x128",
+          "title": "Novel Name Generator"
+        },
+        "url": "/"
+      },
+      "nav": {
+        "items": [
+          {
+            "title": "Pricing",
+            "url": "/",
+            "target": "_blank"
+          },
+          {
+            "title": "Name Generators",
+            "url": "/name-generators",
+            "target": "_blank"
+          },
+          {
+            "title": "blog",
+            "url": "/blog",
+            "target": "_blank"
+          },
+          {
+            "title": "tag",
+            "url": "/tags",
+            "target": "_blank"
+          }
+        ]
+      },
+      "buttons": [
+        {
+          "title": "Sign In",
+          "url": "/api/auth/signin?callbackUrl=%2Fname-generators",
+          "target": "_blank"
+        }
+      ]
+    },
+    "hero": {
+      "title": "Create Unique Names for Your Novel Characters",
+      "description": "Use the Novel Name Generator to easily create character names with literary style and cultural depth, helping you craft vivid characters.",
+      "image": {
+        "title": "Novel Name Generator",
+        "src": "https://placehold.co/1280x500.png"
+      },
+      "image_position": "right",
+      "text_align": "left",
+      "tip": "Start free trial now, add inspiration to your creation, and craft outstanding character names!",
+      "buttons": [
+        {
+          "title": "Start Free Trial Now",
+          "url": "/name-generators",
+          "target": "_blank"
+        },
+        {
+          "title": "Vote on ProductHunt",
+          "url": "/",
+          "target": "_blank",
+          "theme": "outline"
+        }
+      ],
+      "show_happy_users": true,
+      "show_proof": false
+    },
+    "section": {
+      "items": [
+        {
+          "name": "what",
+          "title": "What is Novel Name Generator",
+          "description": "Novel Name Generator is an online tool designed for writers and creative professionals, helping generate unique and meaningful character names. By combining literary styles, cultural backgrounds, and personality traits, it provides diverse name options to help you easily create fascinating characters.",
+          "image": {
+            "src": "https://placehold.co/600x400.png"
+          },
+          "image_position": "left",
+          "text_align": "center",
+          "items": [
+            {
+              "title": "Diverse Name Styles",
+              "description": "Whether it's classical, modern, or fantasy style, we can provide suitable names for you."
+            },
+            {
+              "title": "Precise Character Creation",
+              "description": "Customize names based on character personality and background to enhance story depth."
+            },
+            {
+              "title": "Quick Online Generation",
+              "description": "Simple input, instant generation, making the creative process more efficient."
+            }
+          ]
+        },
+        {
+          "name": "why",
+          "title": "Why Choose Novel Name Generator",
+          "description": "Choose our Novel Name Generator to make your creative process smoother and help writers create vivid characters in their story world.",
+          "image": {
+            "src": "https://placehold.co/600x400.png"
+          },
+          "image_position": "right",
+          "text_align": "center",
+          "items": [
+            {
+              "title": "Endless Inspiration",
+              "description": "Easily find inspiration by combining cultural backgrounds and personality traits."
+            },
+            {
+              "title": "Easy to Use",
+              "description": "Simply input character personality descriptions to quickly generate names."
+            },
+            {
+              "title": "Suitable for All Creations",
+              "description": "Find perfect names for novels, scripts, or game characters."
+            }
+          ]
+        },
+        {
+          "name": "how",
+          "title": "How to Use Novel Name Generator",
+          "description": "Using our tool is very simple, follow these steps to generate ideal character names:",
+          "image": {
+            "src": "https://placehold.co/600x400.png"
+          },
+          "image_position": "left",
+          "text_align": "center",
+          "items": [
+            {
+              "title": "1. Enter Character Description",
+              "description": "Provide character personality traits and background description."
+            },
+            {
+              "title": "2. Choose Name Style",
+              "description": "Select preferred name style, such as classical, modern, or fantasy style."
+            },
+            {
+              "title": "3. Get Name Suggestions",
+              "description": "System will quickly generate multiple name suggestions based on your description."
+            }
+          ],
+          "buttons": [
+            {
+              "title": "Try Now 👉",
+              "url": "/name-generators",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "feature": {
+      "title": "Core Features of Novel Name Generator",
+      "description": "Explore how our tool helps you create excellent novel character names more easily.",
+      "tip": "ConvertFast offers flexible pricing options to suit developers and teams of all sizes. Start building stunning landing pages faster than ever.",
+      "items": [
+        {
+          "title": "Diverse Naming Styles",
+          "description": "Supports classical, modern, fantasy, and other styles, adapting to different types of novel creation.",
+          "avatar": {
+            "src": "/imgs/icons/1.svg"
+          }
+        },
+        {
+          "title": "Personalized Name Customization",
+          "description": "Generate unique names based on character personality and background.",
+          "avatar": {
+            "src": "/imgs/icons/2.svg"
+          }
+        },
+        {
+          "title": "Flexible Online Usage",
+          "description": "No download needed, access and use anytime, anywhere, quickly generate required names.",
+          "avatar": {
+            "src": "/imgs/icons/3.svg"
+          }
+        },
+        {
+          "title": "Adapts to Multiple Creative Scenarios",
+          "description": "From novels to scripts to game development, providing comprehensive naming support.",
+          "avatar": {
+            "src": "/imgs/icons/4.svg"
+          }
+        }
+      ]
+    },
+    "cta": {
+      "title": "Can't Wait to Try Novel Name Generator?",
+      "description": "Start now, add inspiration to your creation, and craft outstanding character names!",
+      "buttons": [
+        {
+          "title": "Try It Now",
+          "url": "/name-generators",
+          "target": "_blank"
+        }
+      ]
+    },
+    "testimonial": {
+      "title": "User Reviews of Novel Name Generator",
+      "description": "See how our users evaluate this powerful creative tool.",
+      "items": [
+        {
+          "name": "Li Hua",
+          "title": "Novelist",
+          "description": "This tool has been a great help, making it easy to find suitable names for characters and saving lots of time.",
+          "avatar": {
+            "src": "https://placehold.co/60x60.png"
+          }
+        },
+        {
+          "name": "Wang Fang",
+          "title": "Screenwriter",
+          "description": "The creative process is smoother, with diverse name styles. Highly recommended for all writers!",
+          "avatar": {
+            "src": "https://placehold.co/60x60.png"
+          }
+        },
+        {
+          "name": "Zhang Wei",
+          "title": "Game Developer",
+          "description": "Naming game characters has become so simple, and the tool generates very creative names.",
+          "avatar": {
+            "src": "https://placehold.co/60x60.png"
+          }
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions About Novel Name Generator",
+      "description": "Answers to common questions you might encounter while using our tool.",
+      "items": [
+        {
+          "title": "What styles does Novel Name Generator support?",
+          "description": "The tool supports classical, modern, fantasy, and many other styles to meet different creative needs."
+        },
+        {
+          "title": "Do I need to register to use Novel Name Generator?",
+          "description": "No registration needed for free use, but registering allows you to save names and access more advanced features."
+        },
+        {
+          "title": "Can I generate names for different types of works?",
+          "description": "Yes, you can generate suitable names for novels, scripts, or games."
+        }
+      ]
+    },
+    "footer": {
+      "brand": {
+        "title": "Novel Name Generator",
+        "description": "Novel Name Generator is an online tool created for writers and creative professionals, helping you easily generate character names with cultural and literary style.",
+        "avatar": {
+          "src": "https://placehold.co/60x60.png",
+          "title": "Novel Name Generator"
+        },
+        "url": "/"
+      },
+      "badge_disabled": false,
+      "copyright": "© 2024 • Novel Name Generator All rights reserved.",
+      "social": {
+        "items": [
+          {
+            "title": "Weibo",
+            "url": "https://weibo.com/namingtool",
+            "target": "_blank"
+          },
+          {
+            "title": "ProductHunt",
+            "url": "https://www.producthunt.com/posts/novel-naming-generator",
+            "target": "_blank"
+          },
+          {
+            "title": "WeChat",
+            "url": "https://wechat.com/namingtool",
+            "target": "_blank"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:support@namingtool.com",
+            "target": "_self"
+          }
+        ]
+      },
+      "nav": {
+        "items": [
+          {
+            "title": "Products",
+            "children": [
+              {
+                "title": "Name Generator",
+                "url": "/name-generators",
+                "target": "_blank"
+              }
+            ]
+          },
+          {
+            "title": "Friend Links",
+            "children": [
+              {
+                "title": "pagen-ai-landing-page-template",
+                "url": "https://github.com/all-in-aigc/pagen-ai-landing-page-template",
+                "target": "_blank"
+              },
+              {
+                "title": "tailwind-nextjs-starter-blog",
+                "url": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+                "target": "_blank"
+              }
+            ]
+          },
+          {
+            "title": "Services",
+            "children": [
+              {
+                "title": "Privacy Policy",
+                "url": "/privacy-policy"
+              },
+              {
+                "title": "Terms of Service",
+                "url": "/terms-of-service"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "usecase": {
+      "description": "Trusted by leading companies worldwide",
+      "items": [
+        {
+          "image": {
+            "src": "/imgs/logos/1.svg",
+            "title": "Company 1"
+          }
+        }
+      ]
+    }
+  },
+  "NameGenerators": {
+    "defaultConfig": {
+      "genderOptions": ["Male", "Female", "Neutral"],
+      "genreOptions": ["Fantasy", "SciFi", "Gothic", "Historical"],
+      "nameStyleOptions": ["Noble", "Mystical", "Warrior", "Common"],
+      "countOptions": [3, 5, 8, 10],
+      "defaultTraits": ["Mysterious", "Powerful", "Dark"]
+    },
+    "defaultNames": [
+      {
+        "name": "Raven Blackthorn",
+        "description": "A name combining the mysterious raven with the gothic blackthorn, suggesting a dark and enigmatic character. Common in gothic fantasy and dark romance novels, often associated with mysterious powers or troubled past.",
+        "review": "Perfect for dark fantasy or gothic romance protagonists."
+      },
+      {
+        "name": "Sterling Nightshade",
+        "description": "Sterling implies nobility and worth, while Nightshade adds a dangerous, poisonous element. Suitable for an anti-hero or noble villain in fantasy novels.",
+        "review": "Balanced blend of aristocratic and dangerous elements."
+      },
+      {
+        "name": "Aurora Moonweaver",
+        "description": "Combines celestial Aurora with the mystical Moonweaver. Typically represents a magical character with ties to celestial or lunar powers in fantasy fiction.",
+        "review": "Excellent for magical or ethereal female characters in fantasy."
+      },
+      {
+        "name": "Drake Ironheart",
+        "description": "Drake suggests dragon heritage, while Ironheart implies strength and determination. Common in epic fantasy for warrior characters or dragon-related protagonists.",
+        "review": "Strong heroic name suitable for fantasy protagonists."
+      }
+    ],
+    "defaultCharacterInfo": {
+      "gender": "Male",
+      "genre": "Fantasy",
+      "nameStyle": "Noble",
+      "traits": ["Mysterious", "Powerful", "Dark"],
+      "additionalInfo": "",
+      "count": 5
+    },
+    "errorMessage": "Error generating names. Please try again later."
+  }
+}

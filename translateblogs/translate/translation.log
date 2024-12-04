@@ -1,0 +1,9 @@
+2024-11-21 07:00:06,253 - INFO - 找到 2 个MDX文件
+2024-11-21 07:00:06,254 - INFO - 开始翻译文件: docs\post1.mdx
+2024-11-21 07:00:06,254 - INFO - 开始翻译文件: docs\post2.mdx
+2024-11-21 07:00:09,293 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:00:09,666 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:00:12,097 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:00:12,101 - INFO - 完成翻译文件: docs\post1.mdx
+2024-11-21 07:00:12,487 - INFO - HTTP Request: POST https://aigc789.top/v1/chat/completions "HTTP/1.1 200 OK"
+2024-11-21 07:00:12,493 - INFO - 完成翻译文件: docs\post2.mdx

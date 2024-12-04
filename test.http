@@ -1,0 +1,28 @@
+@token=e6d19c61129b50
+@baseUrl=https://ipinfo.io
+
+### 1. 使用 Bearer Token 获取当前IP信息
+GET {{baseUrl}}/json
+Authorization: Bearer {{token}}
+Accept: application/json
+
+### 2. 使用 URL 参数方式获取当前IP信息
+GET {{baseUrl}}/json?token={{token}}
+Accept: application/json
+
+### 3. 查询特定 IP 地址信息 (例如 Google DNS)
+GET {{baseUrl}}/8.8.8.8/json?token={{token}}
+Accept: application/json
+
+### 4. 只获取特定字段 (例如获取城市)
+GET {{baseUrl}}/8.8.8.8/city?token={{token}}
+Accept: application/json
+
+### 5. 获取 IPv6 地址信息
+GET {{baseUrl}}/2001:4860:4860::8888/json?token={{token}}
+Accept: application/json
+
+### 6. 使用 Basic Auth 方式
+GET {{baseUrl}}/json
+Authorization: Basic {{token}}:
+Accept: application/json
