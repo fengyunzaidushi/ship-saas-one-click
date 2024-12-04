@@ -1,6 +1,11 @@
 # AI Landing Page & Blog Generator
 
-这是一个基于 [Pagen AI Landing Page Template](https://github.com/all-in-aigc/pagen-ai-landing-page-template) 和 [Tailwind Nextjs Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) 开发的项目，集成了AI生成功能的落地页和博客系统。
+
+🚀 AI SaaS 快速出海模板 | AI SaaS ONE CLICK Template
+
+一站式 AI SaaS 创业模板，内置落地页/博客生成器，支持i18n多语言本，帮助产品快速出海。集成完整用户系统和支付流程，基于 Next.js + Supabase 构建的现代化解决方案。
+
+
 
 ## 🌟 主要特性
 
