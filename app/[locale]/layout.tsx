@@ -1,14 +1,12 @@
-
-
-
 import "../globals.css";
 import { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
+import { ThemeProvider } from "@/components/theme-provider";
+import siteMetadata from '@/data/siteMetadata'
+import NotFound from './(default)/not-found'
 
 import { Space_Grotesk } from 'next/font/google'
 import localFont from "next/font/local";
-import { ThemeProvider } from "@/components/theme-provider";
-import siteMetadata from '@/data/siteMetadata'
 const geistSans = localFont({
     src: "../fonts/GeistVF.woff",
     variable: "--font-geist-sans",
@@ -67,14 +65,20 @@ export const metadata: Metadata = {
     },
 };
 
+export const notFound = {
+    component: NotFound
+};
+
 export default function RootLayout({
     children,
+    params: { locale }
 }: {
     children: React.ReactNode;
+    params: { locale: string };
 }) {
     return (
         <html
-            lang="en"
+            lang={locale}
             suppressHydrationWarning
             className={`${space_grotesk.variable} ${geistSans.variable} ${geistMono.variable} scroll-smooth`}
         >
