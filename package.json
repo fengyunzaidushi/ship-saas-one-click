@@ -1,5 +1,5 @@
 {
-  "name": "custom-saas-template",
+  "name": "ship-saas-one-click",
   "version": "1.0.0",
   "license": "Commercial",
   "private": true,
@@ -9,16 +9,18 @@
       "author": "Timothy Lin",
       "url": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
       "license": "MIT"
+    },
+    "pagen-ai-landing-page-template": {
+      "author": "mikemintang",
+      "url": "https://github.com/all-in-aigc/pagen-ai-landing-page-template",
+      "license": "MIT"
     }
   },
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "build": "next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
-    "serve": "next start",
-    "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky"
+    "build": "next build",
+    "serve": "next start"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
