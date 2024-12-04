@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge"
 import { Info, X } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 
-// Move components outside of the main component
+// Move components outside of the main component and fix the key prop issue
 const TraitBadge = ({ trait, onRemove }: { trait: string; onRemove: (trait: string) => void }) => (
   <Badge className="bg-zinc-700 text-white px-3 py-1">
     {trait}
@@ -105,9 +105,9 @@ export default function NameGenerator({ locale }: { locale: string }) {
 
   const renderTraits = () => (
     <div className="flex flex-wrap gap-2 mb-2">
-      {characterInfo.traits.map((trait) => (
+      {characterInfo.traits.map((trait, index) => (
         <TraitBadge
-          key={trait}
+          key={`${trait}-${index}`}
           trait={trait}
           onRemove={handleTraitRemove}
         />
