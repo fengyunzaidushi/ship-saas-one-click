@@ -50,8 +50,8 @@ export async function POST(request: NextRequest) {
     if (!completion.choices[0].message.content) {
       throw new Error("No content in response");
     }
-
-    const parsedCharacters = JSON.parse(completion.choices[0].message.content);
+    const res = completion.choices[0].message.content;
+    const parsedCharacters = JSON.parse(res);
 
     // 保存生成的角色到 Supabase
     const charactersToInsert = parsedCharacters.characters.map((character: any) => ({

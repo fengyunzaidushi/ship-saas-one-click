@@ -19,10 +19,10 @@
   "saas_one": {
     "header": {
       "brand": {
-        "title": "Novel Name Generator",
+        "title": "Novel Character Name Generator",
         "avatar": {
           "src": "https://placehold.co/128x128",
-          "title": "Novel Name Generator"
+          "title": "Novel Character Name Generator"
         },
         "url": "/"
       },
@@ -60,9 +60,9 @@
     },
     "hero": {
       "title": "Create Unique Names for Your Novel Characters",
-      "description": "Use the Novel Name Generator to easily create character names with literary style and cultural depth, helping you craft vivid characters.",
+      "description": "Use the Novel Character Name Generator to easily create character names with literary style and cultural depth, helping you craft vivid characters.",
       "image": {
-        "title": "Novel Name Generator",
+        "title": "Novel Character Name Generator",
         "src": "https://placehold.co/1280x500.png"
       },
       "image_position": "right",
@@ -88,8 +88,8 @@
       "items": [
         {
           "name": "what",
-          "title": "What is Novel Name Generator",
-          "description": "Novel Name Generator is an online tool designed for writers and creative professionals, helping generate unique and meaningful character names. By combining literary styles, cultural backgrounds, and personality traits, it provides diverse name options to help you easily create fascinating characters.",
+          "title": "What is Novel Character Name Generator",
+          "description": "Novel Character Name Generator is an online tool designed for writers and creative professionals, helping generate unique and meaningful character names. By combining literary styles, cultural backgrounds, and personality traits, it provides diverse name options to help you easily create fascinating characters.",
           "image": {
             "src": "https://placehold.co/600x400.png"
           },
@@ -112,8 +112,8 @@
         },
         {
           "name": "why",
-          "title": "Why Choose Novel Name Generator",
-          "description": "Choose our Novel Name Generator to make your creative process smoother and help writers create vivid characters in their story world.",
+          "title": "Why Choose Novel Character Name Generator",
+          "description": "Choose our Novel Character Name Generator to make your creative process smoother and help writers create vivid characters in their story world.",
           "image": {
             "src": "https://placehold.co/600x400.png"
           },
@@ -136,7 +136,7 @@
         },
         {
           "name": "how",
-          "title": "How to Use Novel Name Generator",
+          "title": "How to Use Novel Character Name Generator",
           "description": "Using our tool is very simple, follow these steps to generate ideal character names:",
           "image": {
             "src": "https://placehold.co/600x400.png"
@@ -168,7 +168,7 @@
       ]
     },
     "feature": {
-      "title": "Core Features of Novel Name Generator",
+      "title": "Core Features of Novel Character Name Generator",
       "description": "Explore how our tool helps you create excellent novel character names more easily.",
       "tip": "ConvertFast offers flexible pricing options to suit developers and teams of all sizes. Start building stunning landing pages faster than ever.",
       "items": [
@@ -203,7 +203,7 @@
       ]
     },
     "cta": {
-      "title": "Can't Wait to Try Novel Name Generator?",
+      "title": "Can't Wait to Try Novel Character Name Generator?",
       "description": "Start now, add inspiration to your creation, and craft outstanding character names!",
       "buttons": [
         {
@@ -214,7 +214,7 @@
       ]
     },
     "testimonial": {
-      "title": "User Reviews of Novel Name Generator",
+      "title": "User Reviews of Novel Character Name Generator",
       "description": "See how our users evaluate this powerful creative tool.",
       "items": [
         {
@@ -244,15 +244,15 @@
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions About Novel Name Generator",
+      "title": "Frequently Asked Questions About Novel Character Name Generator",
       "description": "Answers to common questions you might encounter while using our tool.",
       "items": [
         {
-          "title": "What styles does Novel Name Generator support?",
+          "title": "What styles does Novel Character Name Generator support?",
           "description": "The tool supports classical, modern, fantasy, and many other styles to meet different creative needs."
         },
         {
-          "title": "Do I need to register to use Novel Name Generator?",
+          "title": "Do I need to register to use Novel Character Name Generator?",
           "description": "No registration needed for free use, but registering allows you to save names and access more advanced features."
         },
         {
@@ -263,16 +263,16 @@
     },
     "footer": {
       "brand": {
-        "title": "Novel Name Generator",
-        "description": "Novel Name Generator is an online tool created for writers and creative professionals, helping you easily generate character names with cultural and literary style.",
+        "title": "Novel Character Name Generator",
+        "description": "Novel Character Name Generator is an online tool created for writers and creative professionals, helping you easily generate character names with cultural and literary style.",
         "avatar": {
           "src": "https://placehold.co/60x60.png",
-          "title": "Novel Name Generator"
+          "title": "Novel Character Name Generator"
         },
         "url": "/"
       },
       "badge_disabled": false,
-      "copyright": "© 2024 • Novel Name Generator All rights reserved.",
+      "copyright": "© 2024 • Novel Character Name Generator All rights reserved.",
       "social": {
         "items": [
           {
