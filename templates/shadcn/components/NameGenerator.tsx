@@ -142,11 +142,12 @@ export default function NameGenerator({ locale }: { locale: string }) {
                   <div>
                     <label className="block font-bold mb-3">设定人物的性别</label>
                     <div className="flex gap-4">
-                      {defaultConfig.genderOptions.map((gender,idx) => (
+                      {defaultConfig.genderOptions.map((gender, idx) => (
                         <Button
                           key={`gender-${gender}-${idx}`}
                           type="button"
-                          className={`${characterInfo.gender === gender ? "variant-default" : "variant-outline"} w-1/3`}
+                          variant={characterInfo.gender === gender ? "default" : "outline"}
+                          className="w-1/3"
                           onClick={() => setCharacterInfo(prev => ({ ...prev, gender }))}
                         >
                           {gender}
@@ -162,7 +163,8 @@ export default function NameGenerator({ locale }: { locale: string }) {
                         <Button
                           key={`genre-${genre}`}
                           type="button"
-                          className={`${characterInfo.genre === genre ? "variant-default" : "variant-outline"} w-1/3`}
+                          variant={characterInfo.genre === genre ? "default" : "outline"}
+                          className="w-1/3"
                           onClick={() => setCharacterInfo(prev => ({ ...prev, genre }))}
                         >
                           {genre}
@@ -178,7 +180,8 @@ export default function NameGenerator({ locale }: { locale: string }) {
                         <Button
                           key={`style-${nameStyle}`}
                           type="button"
-                          className={`${characterInfo.nameStyle === nameStyle ? "variant-default" : "variant-outline"} w-1/3`}
+                          variant={characterInfo.nameStyle === nameStyle ? "default" : "outline"}
+                          className="w-1/3"
                           onClick={() => setCharacterInfo(prev => ({ ...prev, nameStyle }))}
                         >
                           {nameStyle}
@@ -194,7 +197,8 @@ export default function NameGenerator({ locale }: { locale: string }) {
                         <Button
                           key={`count-${count}`}
                           type="button"
-                          className={`${characterInfo.count === count ? "variant-default" : "variant-outline"} w-1/4`}
+                          variant={characterInfo.count === count ? "default" : "outline"}
+                          className="w-1/4"
                           onClick={() => setCharacterInfo(prev => ({ ...prev, count }))}
                         >
                           {count}个
