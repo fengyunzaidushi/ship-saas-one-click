@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/theme-provider";
 import siteMetadata from '@/data/siteMetadata'
 import NotFound from './(default)/not-found'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 import { Space_Grotesk } from 'next/font/google'
 import localFont from "next/font/local";
@@ -32,6 +33,9 @@ export const metadata: Metadata = {
         template: `%s | ${siteMetadata.title}`,
     },
     description: siteMetadata.description,
+    verification: {
+        google: 'La9NQn972h_teBCYHQRZeAmAyqrpJZfOirCBiZx7tOU',
+    },
     openGraph: {
         title: siteMetadata.title,
         description: siteMetadata.description,
@@ -84,6 +88,7 @@ export default async function RootLayout({
             className={`${space_grotesk.variable} ${geistSans.variable} ${geistMono.variable} scroll-smooth`}
         >
             <body className="bg-white pl-[calc(100vw-100%)] text-black antialiased dark:bg-gray-950 dark:text-white" suppressHydrationWarning>
+                <GoogleAnalytics />
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
