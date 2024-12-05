@@ -231,15 +231,15 @@ export default makeSource({
 
 
       // 读取中文文件内容进行调试
-      try {
-        const zhContent = readFileSync(
-          path.join(process.cwd(), "data/blog/zh/code-sample.mdx"),
-          "utf8"
-        );
+      // try {
+      //   const zhContent = readFileSync(
+      //     path.join(process.cwd(), "data/blog/zh/code-sample.mdx"),
+      //     "utf8"
+      //   );
 
-      } catch (err) {
-        console.error("Error reading Chinese file:", err);
-      }
+      // } catch (err) {
+      //   console.error("Error reading Chinese file:", err);
+      // }
 
 
 

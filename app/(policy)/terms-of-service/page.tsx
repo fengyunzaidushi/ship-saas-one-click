@@ -9,10 +9,10 @@ export default function TermsOfService() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="mb-8 text-3xl font-bold">服务条款</h1>
-      
+
       <div className="prose prose-gray max-w-none">
         <p className="text-gray-600">最后更新日期：2024年3月20日</p>
-        
+
         <section className="mt-8">
           <h2 className="text-xl font-semibold mb-4">1. 服务说明</h2>
           <p>我们提供AI驱动的内容生成服务，包括但不限于：</p>
@@ -27,7 +27,7 @@ export default function TermsOfService() {
           <h2 className="text-xl font-semibold mb-4">2. 用户责任</h2>
           <p>作为用户，您同意：</p>
           <ul className="list-disc pl-6 mt-2">
-            <li>提供准确的注册信息</li>
+            <li>提供准确的���册信息</li>
             <li>对账户活动负责</li>
             <li>不得滥用或非法使用我们的服务</li>
             <li>不得侵犯他人知识产权</li>
@@ -58,7 +58,7 @@ export default function TermsOfService() {
 
         <section className="mt-8">
           <h2 className="text-xl font-semibold mb-4">5. 免责声明</h2>
-          <p>我们的服务按"现状"提供，我们：</p>
+          <p>我们的服务按&quot;现状&quot;提供，我们：</p>
           <ul className="list-disc pl-6 mt-2">
             <li>不保证服务不会中断或无错误</li>
             <li>不对AI生成内容的准确性负责</li>
@@ -83,7 +83,7 @@ export default function TermsOfService() {
 
         <section className="mt-8">
           <h2 className="text-xl font-semibold mb-4">8. 联系方式</h2>
-          <p>如果您对服务条款有任何疑问，请联系我们：</p>
+          <p>如果您对我们的&quot;服务条款&quot;有任何疑问，请联系我们：</p>
           <p className="mt-2">邮箱：support@example.com</p>
         </section>
       </div>

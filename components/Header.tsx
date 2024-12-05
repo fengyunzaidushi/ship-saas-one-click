@@ -16,7 +16,6 @@ const Header = () => {
   const t = useTranslations('saas_one.header.nav')
   const navItems = t.raw('items')
 
-
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -25,8 +24,6 @@ const Header = () => {
   if (siteMetadata.stickyNav) {
     headerClass += ' sticky top-0 z-50'
   }
-
-  let headerContentClass = 'flex items-center justify-between py-10'
 
   // Don't render anything until mounted to prevent hydration mismatch
   if (!mounted) {
