@@ -4,10 +4,26 @@ import { slug } from 'github-slugger'
 import tagData from 'app/tag-data.json'
 import { genPageMetadata } from 'app/seo'
 
-export const metadata = genPageMetadata({ title: 'Tags', description: 'Things I blog about' })
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const resolvedParams = await params
+  return genPageMetadata({ 
+    title: 'Tags', 
+    params: resolvedParams,
+    description: 'Browse blog posts by tag'
+  })
+}
 
-export default async function Page( {params}: {params: {locale: string}}) {
-  const tagCounts = tagData[params.locale] as Record<string, number>
+export default async function TagsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const resolvedParams = await params
+  const tagCounts = tagData[resolvedParams.locale] as Record<string, number>
   const tagKeys = Object.keys(tagCounts)
   const sortedTags = tagKeys.sort((a, b) => tagCounts[b] - tagCounts[a])
   return (

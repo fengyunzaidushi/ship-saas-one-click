@@ -69,16 +69,17 @@ export const notFound = {
     component: NotFound
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
-    params: { locale }
+    params
 }: {
     children: React.ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
 }) {
+    const resolvedParams = await params
     return (
         <html
-            lang={locale}
+            lang={resolvedParams.locale}
             suppressHydrationWarning
             className={`${space_grotesk.variable} ${geistSans.variable} ${geistMono.variable} scroll-smooth`}
         >
