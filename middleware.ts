@@ -20,21 +20,21 @@ export async function middleware(request: NextRequest) {
     locales: routing.locales,
     localePrefix: "as-needed",
     defaultLocale: "en",
-    localeDetection: true,  // 启用语言检测
+    localeDetection: true, // 启用语言检测
     // 添加语言持久化配置
     pathnames: {
       "/": "/",
       "/tags": "/tags",
       "/blog": "/blog",
       // 添加其他路径...
-    }
+    },
   });
 
   const response = handleI18nRouting(request);
-  
+
   // 添加语言cookie以保持状态
-  if (request.nextUrl.pathname.startsWith('/zh')) {
-    response.headers.set('Set-Cookie', 'NEXT_LOCALE=zh; Path=/');
+  if (request.nextUrl.pathname.startsWith("/zh")) {
+    response.headers.set("Set-Cookie", "NEXT_LOCALE=zh; Path=/");
   }
 
   return response;

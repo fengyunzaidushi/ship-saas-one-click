@@ -142,7 +142,7 @@ export const Blog = defineDocumentType(() => ({
         const pathSegments = doc._raw.flattenedPath.split("/");
         const locale = pathSegments[1];
         const restOfPath = pathSegments.slice(2).join("/");
-        return `/${locale}/blog/${restOfPath}`;
+        return locale === 'en' ? `/blog/${restOfPath}` : `/${locale}/blog/${restOfPath}`;
       },
     },
     slug: {
