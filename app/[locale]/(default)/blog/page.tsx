@@ -9,9 +9,9 @@ const POSTS_PER_PAGE = 5
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
-  const resolvedParams = await Promise.resolve(params)
+  const resolvedParams = await params
   return genPageMetadata({ title: 'Blog', params: resolvedParams })
 }
 
