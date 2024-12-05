@@ -22,11 +22,10 @@ const layouts = {
 }
 
 export async function generateMetadata(props: {
-  params: Promise<{ locale: string; slug: string[] }>
+  params: { locale: string; slug: string[] }
 }): Promise<Metadata | undefined> {
-  const params = await props.params
-  const slug = decodeURI(params.slug.join('/'))
-  const post = allBlogs.find((p) => p.slug === slug && p.locale === params.locale)
+  const slug = decodeURI(props.params.slug.join('/'))
+  const post = allBlogs.find((p) => p.slug === slug && p.locale === props.params.locale)
   const authorList = post?.authors || ['default']
   const authorDetails = authorList.map((author) => {
     const authorResults = allAuthors.find((p) => p.slug === author)
@@ -82,9 +81,9 @@ export async function generateStaticParams() {
   return paths
 }
 
-export default async function Page({ params }: { params: { locale: string; slug: string[] } }) {
-  const resolvedParams = await Promise.resolve(params)
-  const slug = decodeURI(resolvedParams.slug.join('/'))
+export default async function Page({ params }: { params: Promise<{ slug: string[], locale: string }> }) {
+  const resolvedParams = await params
+  const slug = resolvedParams.slug.join('/')
   const post = allBlogs.find((p) => p.slug === slug && p.locale === resolvedParams.locale)
   
   if (!post) {
