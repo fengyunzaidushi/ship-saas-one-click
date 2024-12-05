@@ -1,6 +1,4 @@
 {
-  
-
   "public": {
     "auth": {
       "signIn": "Sign in",
@@ -314,6 +312,7 @@
           {
             "title": "Friend Links",
             "children": [
+              
               {
                 "title": "pagen-ai-landing-page-template",
                 "url": "https://github.com/all-in-aigc/pagen-ai-landing-page-template",
@@ -322,6 +321,11 @@
               {
                 "title": "tailwind-nextjs-starter-blog",
                 "url": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+                "target": "_blank"
+              },
+              {
+                "title": "ship-saas-one-click",
+                "url": "https://github.com/fengyunzaidushi/ship-saas-one-click",
                 "target": "_blank"
               }
             ]

@@ -9,7 +9,6 @@ interface SiteMetadata {
   siteRepo: string;
   siteLogo: string;
   socialBanner: string;
-  mastodon: string;
   email: string;
   github: string;
   x: string;
@@ -39,20 +38,19 @@ interface SiteMetadata {
 }
 
 const siteMetadata: SiteMetadata = {
-  title: "Next.js Starter Blog",
-  author: "Tails Azimuth",
-  headerTitle: "SAAS ONE CLICK ",
-  description: "A blog created with Next.js and Tailwind.css",
+  title: "ship saas one click",
+  author: "Atalas",
+  headerTitle: "SHIP SAAS 1-CLICK ",
+  description: "deploy your saas website in one click",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl:
     process.env.NODE_ENV === "production"
-      ? "https://your-production-domain.com" // 生产环境URL
+      ? "https://shipsaas1click.com" // 生产环境URL
       : "http://localhost:3000", // 开发环境URL
-  siteRepo: "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+  siteRepo: "https://github.com/fengyunzaidushi/ship-saas-one-click.git",
   siteLogo: `${process.env.BASE_PATH || ""}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ""}/static/images/twitter-card.png`,
-  mastodon: "https://mastodon.social/@mastodonuser",
   email: "address@yoursite.com",
   github: "https://github.com",
   x: "https://twitter.com/x",
