@@ -61,10 +61,11 @@ export default async function BlogPage({
   searchParams,
 }: {
   params: Promise<{ locale: string }>
-  searchParams: { [key: string]: string | string[] | undefined }
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }) {
   try {
     const resolvedParams = await params
+    const resolvedSearchParams = await searchParams
     const posts = await fetchLocalePosts(resolvedParams.locale)
     const { initialDisplayPosts, pagination } = getPaginationData(posts, 1)
 
