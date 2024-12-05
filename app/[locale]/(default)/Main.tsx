@@ -44,8 +44,8 @@ export default function Home({ posts }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
+                            {tags.map((tag, idx) => (
+                              <Tag key={`${tag}-${idx}`} text={tag} id={tag} />
                             ))}
                           </div>
                         </div>

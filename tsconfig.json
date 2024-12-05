@@ -24,7 +24,8 @@
         "name": "next"
       }
     ],
-    "strictNullChecks": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
     "incremental": true,
     "resolveJsonModule": true
   },

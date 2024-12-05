@@ -16,6 +16,9 @@ interface SiteMetadata {
   youtube: string
   linkedin: string
   locale: string
+  newsletter: {
+    provider: string
+  }
   stickyNav: boolean
 }
 
@@ -37,6 +40,9 @@ const siteMetadata: SiteMetadata = {
   youtube: 'https://youtube.com',
   linkedin: 'https://www.linkedin.com',
   locale: 'en-US',
+  newsletter: {
+    provider: 'buttondown'
+  },
   stickyNav: true,
 }
 
