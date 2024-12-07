@@ -7,6 +7,11 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2024-11-20.acacia",
 });
 
+// 根据环境选择正确的 URL
+const baseUrl = process.env.NODE_ENV === "development"
+  ? process.env.NEXT_PUBLIC_LOCAL_URL
+  : process.env.NEXT_PUBLIC_SITE_URL;
+
 export async function POST(request: Request) {
   try {
     // 解析请求体
@@ -64,8 +69,8 @@ export async function POST(request: Request) {
         valid_year: valid_year,
         ...productMetadata,
       },
-      success_url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/payment/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/payment/cancel`,
+      success_url: `${baseUrl}/${locale}/payment/success`,
+      cancel_url: `${baseUrl}/${locale}/payment/cancel`,
     });
 
     // 创建支付记录
