@@ -119,3 +119,26 @@
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
+
+## Payment Integration
+
+This project uses Stripe for payment processing. To set up payments:
+
+1. Create a Stripe account and get your API keys
+2. Add the following environment variables to .env.local:
+   - STRIPE_PUBLIC_KEY: Your Stripe publishable key
+   - STRIPE_SECRET_KEY: Your Stripe secret key
+   - STRIPE_WEBHOOK_SECRET: Your Stripe webhook signing secret
+
+3. Create your products and prices in the Stripe dashboard
+4. Update the priceId in PricingOnetime.tsx with your Stripe Price ID
+
+## 环境变量配置
+
+项目需要配置以下环境变量：
+
+- `NEXT_PUBLIC_SUPABASE_URL`: Supabase 项目 URL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`: Supabase 匿名密钥
+- `NEXT_PUBLIC_STRIPE_PRICE_ID`: Stripe 价格 ID 配置
+
+请在 `.env.local` 文件中配置这些变量。

@@ -14,13 +14,32 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
 
+type UserProfile = {
+  credits: number;
+}
+
 export default function LoginButton() {
   const [loading, setLoading] = useState(false)
   const [user, setUser] = useState<User | null>(null)
+  const [credits, setCredits] = useState<number | null>(null)
   const supabase = createClient()
   const t = useTranslations('public.auth')
   const params = useParams()
   const locale = params.locale as string
+
+  // 从服务端获取用户档案信息
+  const fetchUserProfile = async () => {
+    try {
+      const response = await fetch('/api/profile')
+      if (!response.ok) {
+        throw new Error('Failed to fetch profile')
+      }
+      const data: UserProfile = await response.json()
+      setCredits(data.credits)
+    } catch (error) {
+      console.error('Error fetching user profile:', error)
+    }
+  }
 
   // 检查并创建用户档案
   const checkAndCreateProfile = async () => {
@@ -35,6 +54,9 @@ export default function LoginButton() {
       if (!response.ok) {
         throw new Error('Failed to create profile')
       }
+      
+      // 创建完档案后获取最新信息
+      await fetchUserProfile()
     } catch (error) {
       console.error('Error checking/creating profile:', error)
     }
@@ -58,11 +80,13 @@ export default function LoginButton() {
       setUser(currentUser)
       if (currentUser) {
         checkAndCreateProfile()
+      } else {
+        setCredits(null) // 用户登出时清除credits
       }
     })
 
     return () => subscription.unsubscribe()
-  }, [supabase.auth])
+  }, [])
 
   const handleGoogleLogin = async () => {
     try {
@@ -118,6 +142,11 @@ export default function LoginButton() {
               {user.email && (
                 <p className="w-[200px] truncate text-sm text-muted-foreground">
                   {user.email}
+                </p>
+              )}
+              {credits !== null && (
+                <p className="text-sm text-muted-foreground">
+                  Credits: {credits}
                 </p>
               )}
             </div>

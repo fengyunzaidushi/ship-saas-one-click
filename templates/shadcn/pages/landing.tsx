@@ -5,7 +5,8 @@ import Faq from "../components/Faq";
 import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 
-import Pricing from "../components/Pricing";
+// import PricingRecu from "../components/PricingRecu";
+import PricingOnetime from "../../../components/PricingOnetime";
 import Section from "../components/Section";
 import Testimonial from "../components/Testimonial";
 import Usercase from "../components/Usecase";
@@ -20,7 +21,8 @@ export default function ShadcnLandingPage({ locale }) {
       {/* <Usercase /> */}
       <Section />
       <Feature />
-      {/* <Pricing /> */}
+      {/* <PricingRecu /> */}
+      <PricingOnetime />
       <Testimonial />
       <Faq />
       <Cta />

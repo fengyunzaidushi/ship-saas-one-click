@@ -312,7 +312,6 @@
           {
             "title": "Friend Links",
             "children": [
-              
               {
                 "title": "pagen-ai-landing-page-template",
                 "url": "https://github.com/all-in-aigc/pagen-ai-landing-page-template",
@@ -397,5 +396,57 @@
       "count": 5
     },
     "errorMessage": "Error generating names. Please try again later."
+  },
+  "price_onetime": {
+    "title": "Simple Pricing Plans",
+    "description": "Choose the perfect plan for your creative needs",
+    "tip": "All planss include one-time payment with no recurring fees",
+    "plans": [
+      {
+        "name": "Basic Plan",
+        "description": "Perfect for individual writers and hobbyists",
+        "price": "$9.9",
+        "credits": "1,000 credits",
+        "features": [
+          "1,000 name generation credits",
+          "All name styles and genres",
+          "Credits valid for 1 year"
+        ],
+        "buttonText": "Start Creating",
+        "popular": false
+      },
+      {
+        "name": "Professional Plan",
+        "description": "Ideal for professional writers and creative teams",
+        "price": "$75",
+        "originalPrice": "$99",
+        "credits": "10,000 credits",
+        "features": [
+          "10,000 name generation credits",
+          "All name styles and genres",
+          "Credits valid for 10 years"
+        ],
+        "buttonText": "Go Professional",
+        "popular": true
+      }
+    ],
+    "faq": [
+      {
+        "question": "How many names can I generate with one credit?",
+        "answer": "One credit allows you to generate up to 10 character names with detailed backgrounds and descriptions."
+      },
+      {
+        "question": "Do credits expire?",
+        "answer": "Basic plan credits are valid for 1 year. Professional plan credits never expire."
+      },
+      {
+        "question": "Can I upgrade my plan later?",
+        "answer": "Yes, you can upgrade to the Professional plan at any time. Your remaining credits will be converted accordingly."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards, PayPal, and other popular payment methods."
+      }
+    ]
   }
 }

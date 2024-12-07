@@ -2,6 +2,42 @@ import { createClient } from "@/lib/supabase/server";
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
+export async function GET() {
+  try {
+    const supabase = await createClient();
+
+    // Get authenticated user using getUser() instead of getSession()
+    const { data: { user }, error: userError } = await supabase.auth.getUser();
+    
+    if (userError || !user) {
+      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
+        status: 401,
+      });
+    }
+
+    // Get user profile using the verified user.id
+    const { data: profile, error: profileError } = await supabase
+      .from('character_profile')
+      .select('credits')
+      .eq('id', user.id)  // Use the verified user.id
+      .single();
+
+    if (profileError) {
+      throw profileError;
+    }
+
+    return new NextResponse(JSON.stringify(profile), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  } catch (error) {
+    console.error('Error in GET /api/profile:', error);
+    return new NextResponse(JSON.stringify({ error: 'Internal Server Error' }), {
+      status: 500,
+    });
+  }
+}
+
 export async function POST() {
   try {
     const supabase = await createClient();
@@ -17,8 +53,7 @@ export async function POST() {
 
     // 检查用户档案是否已存在
     const { data: profile, error: fetchError } = await supabase
-      .schema("site_saas")
-      .from("profiles")
+      .from("character_profile")
       .select("id")
       .eq("id", user.id)
       .single();
@@ -29,18 +64,14 @@ export async function POST() {
 
     // 创建新用户档案
     const { error: insertError } = await supabase
-      .schema("site_saas")
-      .from("profiles")
+      .from("character_profile")
       .insert([
         {
           id: user.id,
           name: user.user_metadata?.full_name ?? "",
           email: user.email ?? "",
-          image: user.user_metadata?.avatar_url ?? "",
-          has_access: false,
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
-          tokens: 10000,
         },
       ]);
 

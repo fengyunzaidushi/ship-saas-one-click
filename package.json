@@ -20,7 +20,8 @@
     "start": "next dev",
     "dev": "next dev",
     "build": "next build",
-    "serve": "next start"
+    "serve": "next start",
+    "test:webhook": "ts-node scripts/test-webhook.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -39,6 +40,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "@types/body-scroll-lock": "^3.1.2",
     "@types/mdx": "^2.0.13",
+    "@types/node-fetch": "^2.6.12",
     "autoprefixer": "^10.4.20",
     "body-scroll-lock": "^4.0.0-beta.0",
     "class-variance-authority": "^0.7.1",
@@ -58,6 +60,7 @@
     "next-intl": "^3.25.1",
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.3.0",
+    "node-fetch": "^3.3.2",
     "openai": "^4.74.0",
     "pliny": "^0.4.0",
     "postcss": "^8.4.49",
@@ -79,6 +82,8 @@
     "remark-gfm": "^4.0.0",
     "remark-github-blockquote-alert": "^1.3.0",
     "remark-math": "^6.0.0",
+    "sonner": "^1.7.0",
+    "stripe": "^17.4.0",
     "sugar-high": "^0.7.5",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",

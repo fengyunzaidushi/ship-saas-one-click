@@ -22,7 +22,6 @@ const plans = [
             "3 name suggestions per generation",
             "Basic name styles (Modern, Classical)",
             "Basic character traits",
-            "Email support",
         ],
         popular: false,
     },
@@ -39,27 +38,8 @@ const plans = [
             "Advanced character trait combinations",
             "Name history & meaning analysis",
             "Save favorite names",
-            "Priority email support",
         ],
         popular: true,
-    },
-    {
-        name: "Team",
-        id: "plan-team",
-        href: "#",
-        price: { monthly: "$29", annually: "$290" },
-        description: "Perfect for writing teams and studios.",
-        actionTitle: "Contact sales",
-        features: [
-            "Unlimited name suggestions",
-            "Custom name style creation",
-            "Team collaboration features",
-            "Name conflict detection",
-            "API access",
-            "24/7 priority support",
-            "Team training session",
-        ],
-        popular: false,
     },
 ];
 
@@ -80,8 +60,8 @@ export default function () {
                     teams of all sizes. Start building stunning landing pages faster than
                     ever.
                 </p>
-                <div className="mt-20 flow-root">
-                    <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 gap-x-4 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-3 xl:-mx-4">
+                <div className="mx-auto max-w-4xl mt-20 flow-root">
+                    <div className="isolate -mt-16 grid max-w-sm grid-cols-1 gap-y-16 gap-x-4 sm:mx-auto lg:-mx-8 lg:mt-0 lg:max-w-none lg:grid-cols-2 xl:-mx-4">
                         {plans.map((plan) => (
                             <Card
                                 key={plan.id}
