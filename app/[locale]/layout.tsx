@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import siteMetadata from '@/data/siteMetadata'
 import NotFound from './(default)/not-found'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import { Toaster as SonnerToaster } from 'sonner'
 
 import { Space_Grotesk } from 'next/font/google'
 import localFont from "next/font/local";
@@ -97,6 +98,7 @@ export default async function RootLayout({
                 >
                     {children}
                     <Toaster />
+                    <SonnerToaster />
                 </ThemeProvider>
             </body>
         </html>

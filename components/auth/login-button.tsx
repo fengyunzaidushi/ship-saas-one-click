@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { Button } from '@/components/ui/button'
 import { createClient } from "@/utils/supabase/client"
 import { User } from '@supabase/supabase-js'
@@ -13,6 +13,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useTranslations } from 'next-intl'
 import { useParams } from 'next/navigation'
+import { toast } from "sonner"
 
 type UserProfile = {
   credits: number;
@@ -22,13 +23,14 @@ export default function LoginButton() {
   const [loading, setLoading] = useState(false)
   const [user, setUser] = useState<User | null>(null)
   const [credits, setCredits] = useState<number | null>(null)
+  const [isInitialized, setIsInitialized] = useState(false)
   const supabase = createClient()
   const t = useTranslations('public.auth')
   const params = useParams()
   const locale = params.locale as string
 
   // 从服务端获取用户档案信息
-  const fetchUserProfile = async () => {
+  const fetchUserProfile = useCallback(async () => {
     try {
       const response = await fetch('/api/profile')
       if (!response.ok) {
@@ -38,11 +40,12 @@ export default function LoginButton() {
       setCredits(data.credits)
     } catch (error) {
       console.error('Error fetching user profile:', error)
+      toast.error('Failed to fetch user profile')
     }
-  }
+  }, [])
 
   // 检查并创建用户档案
-  const checkAndCreateProfile = async () => {
+  const checkAndCreateProfile = useCallback(async () => {
     try {
       const response = await fetch('/api/profile', {
         method: 'POST',
@@ -55,37 +58,52 @@ export default function LoginButton() {
         throw new Error('Failed to create profile')
       }
       
-      // 创建完档案后获取最新信息
       await fetchUserProfile()
     } catch (error) {
       console.error('Error checking/creating profile:', error)
+      toast.error('Failed to create user profile')
     }
-  }
+  }, [fetchUserProfile])
+
+  // 初始化用户会话
+  const initializeSession = useCallback(async () => {
+    try {
+      const { data: { user }, error } = await supabase.auth.getUser()
+      if (error) throw error
+      
+      setUser(user)
+      if (user) {
+        await checkAndCreateProfile()
+      }
+    } catch (error) {
+      console.error('Error initializing session:', error)
+      toast.error('Failed to initialize session')
+    } finally {
+      setIsInitialized(true)
+    }
+  }, [supabase.auth, checkAndCreateProfile])
 
   useEffect(() => {
-    // 获取初始会话状态
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      setUser(user)
-      if (user) {
-        checkAndCreateProfile()
-      }
-    })
+    initializeSession()
 
-    // 监听认证状态变化
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (_event) => {
-      const { data: { user } } = await supabase.auth.getUser()
-      setUser(user)
-      if (user) {
-        checkAndCreateProfile()
-      } else {
-        setCredits(null) // 用户登出时清除credits
+    } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (event === 'SIGNED_IN') {
+        setUser(session?.user ?? null)
+        if (session?.user) {
+          await checkAndCreateProfile()
+        }
+      } else if (event === 'SIGNED_OUT') {
+        setUser(null)
+        setCredits(null)
       }
     })
 
-    return () => subscription.unsubscribe()
-  }, [supabase.auth, checkAndCreateProfile])
+    return () => {
+      subscription.unsubscribe()
+    }
+  }, [supabase.auth, checkAndCreateProfile, initializeSession])
 
   const handleGoogleLogin = async () => {
     try {
@@ -93,15 +111,18 @@ export default function LoginButton() {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback?locale=${locale}`
+          redirectTo: `${window.location.origin}/auth/callback?locale=${locale}`,
+          queryParams: {
+            access_type: 'offline',
+            prompt: 'consent',
+          },
         }
       })
 
-      if (error) {
-        throw error
-      }
+      if (error) throw error
     } catch (error) {
       console.error('Error logging in:', error)
+      toast.error('Failed to sign in with Google')
     } finally {
       setLoading(false)
     }
@@ -109,10 +130,21 @@ export default function LoginButton() {
 
   const handleSignOut = async () => {
     try {
-      await supabase.auth.signOut()
+      setLoading(true)
+      const { error } = await supabase.auth.signOut()
+      if (error) throw error
+      toast.success('Signed out successfully')
     } catch (error) {
       console.error('Error signing out:', error)
+      toast.error('Failed to sign out')
+    } finally {
+      setLoading(false)
     }
+  }
+
+  // 在初始化完成之前显示加载状态
+  if (!isInitialized) {
+    return <Button variant="ghost" disabled>Loading...</Button>
   }
 
   if (user) {
