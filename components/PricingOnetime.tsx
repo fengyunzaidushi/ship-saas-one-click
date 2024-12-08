@@ -59,7 +59,7 @@ export default function PricingOnetime() {
     }, [])
 
     const handlePurchase = async (priceId: string) => {
-        console.log("priceId", priceId)
+        console.log("priceId is", priceId)
         if (!userId) {
             toast.error("Please login first")
             sessionStorage.setItem('intended_purchase', priceId)
