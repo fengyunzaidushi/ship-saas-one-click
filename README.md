@@ -94,14 +94,13 @@
 
 ### 待完善功能
 
-- [ ] 支付系统集成
-  - [ ] Stripe 支付
-  - [ ] 其他支付方式
+- [x] 支付系统集成
+  - [x] Stripe 支付
+- [x] 自动检测用户语言偏好
 - [ ] 博客mdx格式文章一键生成
 - [ ] 生成的角色名字前台展示
 - [ ] 更多 AI 生成功能
 - [ ] 性能优化
-- [ ] 自动检测用户语言偏好
 
 ## 🤝 贡献指南
 
@@ -126,6 +125,7 @@ This project uses Stripe for payment processing. To set up payments:
 
 1. Create a Stripe account and get your API keys
 2. Add the following environment variables to .env.local:
+
    - STRIPE_PUBLIC_KEY: Your Stripe publishable key
    - STRIPE_SECRET_KEY: Your Stripe secret key
    - STRIPE_WEBHOOK_SECRET: Your Stripe webhook signing secret
