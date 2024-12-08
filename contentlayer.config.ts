@@ -217,6 +217,7 @@ export default makeSource({
       [rehypePrismPlus, { defaultLanguage: "js", ignoreMissing: true }],
       rehypePresetMinify,
     ],
+    cwd: path.join(process.cwd()),
   },
   onSuccess: async (importData) => {
     try {

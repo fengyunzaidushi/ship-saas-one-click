@@ -11,8 +11,6 @@ import { useEffect, useState, useMemo } from 'react'
 
 export default function PricingOnetime() {
     const t = useTranslations('price_onetime')
-    const rawPlans = (t.raw('plans') as any[]) || []
-    const faqs = (t.raw('faq') as any[]) || []
     const router = useRouter()
     const [userId, setUserId] = useState<string | null>(null)
     const [loading, setLoading] = useState(true)
@@ -21,6 +19,7 @@ export default function PricingOnetime() {
     const locale = useLocale()
 
     const plans = useMemo(() => {
+        const rawPlans = (t.raw('plans') as any[]) || []
         if (rawPlans.length > 0) {
             return rawPlans.map((plan, index) => ({
                 ...plan,
@@ -28,7 +27,11 @@ export default function PricingOnetime() {
             }));
         }
         return [];
-    }, [rawPlans, basic_onetime_price_id, pro_onetime_price_id]);
+    }, [t, basic_onetime_price_id, pro_onetime_price_id]);
+
+    const faqs = useMemo(() => {
+        return (t.raw('faq') as any[]) || [];
+    }, [t]);
 
     useEffect(() => {
         const checkAuthStatus = async () => {

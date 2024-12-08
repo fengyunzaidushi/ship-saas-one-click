@@ -19,9 +19,12 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && cross-env NODE_OPTIONS='--experimental-json-modules'",
     "serve": "next start",
-    "test:webhook": "ts-node scripts/test-webhook.ts"
+    "test:webhook": "ts-node scripts/test-webhook.ts",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -87,7 +90,8 @@
     "sugar-high": "^0.7.5",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "glob": "^10.4.5"
   },
   "devDependencies": {
     "@headlessui/react": "^2.2.0",
@@ -106,6 +110,7 @@
     "lint-staged": "^13.0.0",
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
+    "source-map-explorer": "^2.5.3",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.1.3"
   },

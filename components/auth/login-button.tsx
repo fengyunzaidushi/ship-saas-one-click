@@ -85,7 +85,7 @@ export default function LoginButton() {
     })
 
     return () => subscription.unsubscribe()
-  }, [])
+  }, [supabase.auth, checkAndCreateProfile])
 
   const handleGoogleLogin = async () => {
     try {
