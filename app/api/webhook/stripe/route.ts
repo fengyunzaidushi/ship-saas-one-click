@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { createServerClient } from "@/lib/supabase/server-client";
 
@@ -9,15 +9,16 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 // Webhook 签名密钥
 const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;
+console.log("endpointSecret", endpointSecret);
 const debug = true;
 
-export async function POST(request: Request) {
+export async function POST(request: NextRequest) {
   console.log('Received a POST request at /api/webhook/stripe');
   // 添加详细的请求日志
   console.log('Webhook Request URL:', request.url);
   console.log('Webhook Request Method:', request.method);
   console.log('Webhook Request Headers:', Object.fromEntries(request.headers.entries()));
-  
+
   const headers = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -55,8 +56,8 @@ export async function POST(request: Request) {
     try {
       event = stripe.webhooks.constructEvent(
         body,
-        signature,
-        process.env.STRIPE_WEBHOOK_SECRET
+        signature!,
+        process.env.STRIPE_WEBHOOK_SECRET!
       );
       console.log("Successfully constructed event:", event.type);
     } catch (err) {
@@ -77,7 +78,7 @@ export async function POST(request: Request) {
 
       // 获取 Supabase 客户端
       const supabase = createServerClient();
-      console.log("session.metadata:", session.metadata)
+      console.log("session.metadata:", session.metadata);
 
       const metadata = session.metadata as {
         userId: string;

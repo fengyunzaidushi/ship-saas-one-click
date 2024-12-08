@@ -64,10 +64,9 @@ export default function LoginButton() {
 
   useEffect(() => {
     // 获取初始会话状态
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      const currentUser = session?.user ?? null
-      setUser(currentUser)
-      if (currentUser) {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      setUser(user)
+      if (user) {
         checkAndCreateProfile()
       }
     })
@@ -75,10 +74,10 @@ export default function LoginButton() {
     // 监听认证状态变化
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      const currentUser = session?.user ?? null
-      setUser(currentUser)
-      if (currentUser) {
+    } = supabase.auth.onAuthStateChange(async (_event) => {
+      const { data: { user } } = await supabase.auth.getUser()
+      setUser(user)
+      if (user) {
         checkAndCreateProfile()
       } else {
         setCredits(null) // 用户登出时清除credits

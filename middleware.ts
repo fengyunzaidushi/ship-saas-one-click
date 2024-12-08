@@ -5,9 +5,11 @@ import { routing } from "./i18n/routing";
 
 // API 路径前缀常量
 const API_PREFIX = "/api";
+
 // API 路径白名单
 const API_WHITELIST = [
   `${API_PREFIX}/webhook/stripe`,
+  `${API_PREFIX}/webhooktest`,
   `${API_PREFIX}/auth/check-session`,
   `${API_PREFIX}/create-checkout-session`,
   `${API_PREFIX}/profile`,
@@ -15,34 +17,34 @@ const API_WHITELIST = [
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
+  
   // 添加调试日志
   console.log("Middleware processing path:", pathname);
 
-  // 1. API 路由处理
-  if (pathname.startsWith(API_PREFIX)) {
-    // 为 webhook 路由添加特殊处理
-    if (pathname.startsWith(`${API_PREFIX}/webhook/stripe`)) {
-      console.log("Webhook request detected:", pathname);
-      return; // 直接放行 webhook 请求
-    }
+  // 1. Webhook 处理 - 移到最前面并简化逻辑
+  if (pathname === `${API_PREFIX}/webhook/stripe`) {
+    console.log("Webhook request detected, bypassing all middleware");
+    return; // 直接放行 webhook 请求，不做任何处理
+  }
 
+  // 2. API 路由处理
+  if (pathname.startsWith(API_PREFIX)) {
     // 检查是否在白名单中
     if (API_WHITELIST.some((path) => pathname.startsWith(path))) {
       console.log("Whitelisted API path:", pathname);
       return; // 白名单 API 直接放行
     }
-
+    
     // 其他 API 请求需要进行会话验证
     return await updateSession(request);
   }
 
-  // 2. 认证路由处理
+  // 3. 认证路由处理
   if (pathname === "/auth/callback" || pathname.startsWith("/auth")) {
     return await updateSession(request);
   }
 
-  // 3. 多语言路由处理
+  // 4. 多语言路由处理
   const handleI18nRouting = createMiddleware({
     ...routing,
     locales: routing.locales,
@@ -55,6 +57,7 @@ export async function middleware(request: NextRequest) {
       "/blog": "/blog",
       "/payment/success": "/payment/success",
       "/payment/cancel": "/payment/cancel",
+      "/api/webhooktest": "/api/webhooktest",
     },
   });
 
@@ -68,14 +71,17 @@ export async function middleware(request: NextRequest) {
   return response;
 }
 
-// 更新 matcher 配置
+// 更新 matcher 配置，确保 webhook 路径被正确处理
 export const config = {
   matcher: [
-    // 包含需要处理的 API 路径，但排除静态资源
+    // 明确包含 webhook 路径
+    "/api/webhook/stripe",
+    "/api/webhooktest",
+    // 其他匹配规则
     "/((?!_next/static|_next/image|favicon.ico|.*\\..*).*)",
     "/",
     "/(zh)/:path*",
     "/payment/:path*",
-    "/api/:path*", // 添加 API 路径匹配
+    "/api/:path*",
   ],
 };
