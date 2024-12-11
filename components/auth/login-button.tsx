@@ -69,6 +69,10 @@ export default function LoginButton() {
   const initializeSession = useCallback(async () => {
     try {
       const { data: { user }, error } = await supabase.auth.getUser()
+      if (error && error.message === 'Auth session missing!') {
+        setUser(null)
+        return
+      }
       if (error) throw error
       
       setUser(user)
@@ -77,7 +81,9 @@ export default function LoginButton() {
       }
     } catch (error) {
       console.error('Error initializing session:', error)
-      toast.error('Failed to initialize session')
+      if (error.message !== 'Auth session missing!') {
+        toast.error('Failed to initialize session')
+      }
     } finally {
       setIsInitialized(true)
     }

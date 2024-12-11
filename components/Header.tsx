@@ -13,6 +13,7 @@ import { useTranslations } from 'next-intl'
 const Header = () => {
   // Use client-side state to prevent hydration mismatch
   const [mounted, setMounted] = useState(false)
+  const [loginError, setLoginError] = useState<Error | null>(null)
   const t = useTranslations('saas_one.header.nav')
   const navItems = t.raw('items')
 
