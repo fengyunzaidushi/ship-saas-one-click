@@ -39,6 +39,11 @@
             "target": "_blank"
           },
           {
+            "title": "docs",
+            "url": "/docs",
+            "target": "_blank"
+          },
+          {
             "title": "blog",
             "url": "/blog",
             "target": "_blank"

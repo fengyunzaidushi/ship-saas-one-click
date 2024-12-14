@@ -39,6 +39,11 @@
             "target": "_blank"
           },
           {
+            "title": "文档",
+            "url": "/docs",
+            "target": "_blank"
+          },
+          {
             "title": "博客",
             "url": "/blog",
             "target": "_blank"

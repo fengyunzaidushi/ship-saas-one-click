@@ -1,6 +1,7 @@
 import {
   defineDocumentType,
   ComputedFields,
+  defineNestedType,
   makeSource,
 } from "contentlayer2/source-files";
 import { writeFileSync, readFileSync } from "fs";
@@ -64,6 +65,19 @@ const computedFields: ComputedFields = {
   },
   toc: { type: "json", resolve: (doc) => extractTocHeadings(doc.body.raw) },
 };
+
+const docComputedFields: ComputedFields = {
+  slug: {
+    type: "string",
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
+
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
+  },
+
+}
 
 /**
  * Count the occurrences of all tags across blog posts and write to json file
@@ -187,9 +201,58 @@ export const Authors = defineDocumentType(() => ({
   computedFields,
 }));
 
+const LinksProperties = defineNestedType(() => ({
+  name: "LinksProperties",
+  fields: {
+    title: { type: "string", required: true },
+    href: { type: "string", required: true },
+    description: { type: "string" },
+  },
+}));
+
+export const Doc = defineDocumentType(() => ({
+  name: "Doc",
+  filePathPattern: "docs/**/*.mdx",
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    description: { type: "string" },
+    nav_title: { type: "string" },
+    related: { type: "list", of: LinksProperties },
+    toc: { type: "boolean", default: true },
+    published: { type: "boolean", default: true },
+    order: { type: "number" },
+  },
+  computedFields: {
+    ...computedFields,
+    slugAsParams: {
+      type: "string",
+      resolve: (doc) => {
+        const segments = doc._raw.flattenedPath
+          .split("/")
+          .slice(1)
+          .join("/");
+        return segments;
+      },
+    },
+    path: {
+      type: "string",
+      resolve: (doc) => {
+        const segments = doc._raw.flattenedPath.split("/");
+        const locale = segments[1];
+        const restOfPath = segments.slice(2).join("/");
+        return locale === "en"
+          ? `/docs/${restOfPath}`
+          : `/${locale}/docs/${restOfPath}`;
+      },
+    },
+  },
+}));
+
+
 export default makeSource({
   contentDirPath: "data",
-  documentTypes: [Blog, Authors],
+  documentTypes: [Blog, Authors, Doc],
   mdx: {
     remarkPlugins: [
       remarkExtractFrontmatter,
@@ -229,19 +292,6 @@ export default makeSource({
       const files = globSync("**/blog/**/*.mdx", {
         cwd: path.join(process.cwd(), "data"),
       });
-
-
-      // 读取中文文件内容进行调试
-      // try {
-      //   const zhContent = readFileSync(
-      //     path.join(process.cwd(), "data/blog/zh/code-sample.mdx"),
-      //     "utf8"
-      //   );
-
-      // } catch (err) {
-      //   console.error("Error reading Chinese file:", err);
-      // }
-
 
 
       createTagCount(allBlogs);

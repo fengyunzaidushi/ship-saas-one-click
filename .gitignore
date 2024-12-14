@@ -42,3 +42,4 @@ next-env.d.ts
 *.http
 note.md
 test-webhook.ts
+test*.json
