@@ -205,7 +205,7 @@ const LinksProperties = defineNestedType(() => ({
   name: "LinksProperties",
   fields: {
     title: { type: "string", required: true },
-    href: { type: "string", required: true },
+    links: { type: "list", of: { type: "string" }, required: true },
     description: { type: "string" },
   },
 }));
@@ -218,13 +218,21 @@ export const Doc = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string" },
     nav_title: { type: "string" },
-    related: { type: "list", of: LinksProperties },
+    related: { type: "nested", of: LinksProperties,required:false},
     toc: { type: "boolean", default: true },
     published: { type: "boolean", default: true },
     order: { type: "number" },
   },
   computedFields: {
     ...computedFields,
+    // 获取文档的文件夹名称
+    folder: {
+      type: "string",
+      resolve: (doc) => {
+        const segments = doc._raw.flattenedPath.split("/");
+        return segments[2];
+      },
+    },
     slugAsParams: {
       type: "string",
       resolve: (doc) => {

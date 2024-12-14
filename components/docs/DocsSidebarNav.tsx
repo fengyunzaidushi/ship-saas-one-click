@@ -25,7 +25,22 @@ interface DocGroup {
 
 // Helper function to get locale-specific docs
 function getLocaleDocs(docs: DocItem[], locale: string) {
-  return docs.filter((doc) => doc.locale === locale)
+  // 添加日志来调试
+  console.log('Current locale:', locale)
+  console.log('Available docs:', docs.map(doc => ({ 
+    path: doc.path, 
+    locale: doc.locale 
+  })))
+  
+  // 如果文档没有locale属性，使用路径中的locale
+  return docs.filter((doc) => {
+    if (!doc.locale) {
+      // 从路径中提取locale
+      const localeFromPath = doc.path.split('/')[1]
+      return localeFromPath === locale
+    }
+    return doc.locale === locale
+  })
 }
 
 export function DocsSidebarNav({
@@ -36,9 +51,20 @@ export function DocsSidebarNav({
   const pathname = usePathname()
   const resolvedParams = use(params)
 
+  // 添加日志来验证resolvedParams
+  console.log('Resolved params:', resolvedParams)
+
   // Memoize the groups to prevent unnecessary recalculations
   const groups = useMemo(() => {
+    if (!resolvedParams?.locale) {
+      console.error('No locale found in params')
+      return {}
+    }
+    console.log('All docs:', allDocs.length)
+
     const localeDocs = getLocaleDocs(allDocs, resolvedParams.locale)
+    console.log('length', localeDocs.length)
+    console.log('Filtered docs:', localeDocs)
     
     return localeDocs.reduce((acc: DocGroup, doc) => {
       if (doc.slugAsParams === 'index') return acc
@@ -57,7 +83,18 @@ export function DocsSidebarNav({
       
       return acc
     }, {})
-  }, [resolvedParams.locale])
+  }, [resolvedParams?.locale])
+
+  // 如果没有分组，显示一个提示
+  if (Object.keys(groups).length === 0) {
+    return (
+      <nav className="w-full" role="navigation" aria-label="Documentation sidebar">
+        <div className="p-4 text-sm text-muted-foreground">
+          No documentation available for this language.
+        </div>
+      </nav>
+    )
+  }
 
   return (
     <nav className="w-full" role="navigation" aria-label="Documentation sidebar">
