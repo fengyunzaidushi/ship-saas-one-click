@@ -101,10 +101,14 @@ export default async function DocPage({ params }: DocPageProps) {
 
   return (
     <div className="container relative">
-      <div className="flex flex-col lg:flex-row lg:gap-10">
+      <div className="flex flex-col lg:flex-row ">
         {/* 主要内容区域 */}
-        <article className="w-full lg:w-[calc(100%-250px)] py-6 lg:py-10">
-          {resolvedParams.slug?.length ? <DocBreadcrumb slug={resolvedParams.slug} /> : null}
+        <article className="w-full lg:w-[calc(100%-250px)] ">
+          {resolvedParams.slug?.length ? (
+            <div className="mb-4">
+              <DocBreadcrumb slug={resolvedParams.slug} />
+            </div>
+          ) : null}
           <DocHeading title={doc.title} description={doc.description} />
           {doc.related && <DocLinks links={doc.related as any} />}
           <div className="prose dark:prose-invert max-w-none">
@@ -116,7 +120,7 @@ export default async function DocPage({ params }: DocPageProps) {
 
         {/* 右侧目录 */}
         <div className="hidden lg:block w-[250px] flex-shrink-0">
-          <div className="sticky top-16 overflow-y-auto pt-6">
+          <div className="sticky  overflow-y-auto pt-10">
             <TableOfContents toc={doc.toc || []} />
           </div>
         </div>

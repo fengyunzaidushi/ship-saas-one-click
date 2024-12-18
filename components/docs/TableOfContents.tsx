@@ -53,7 +53,7 @@ export function TableOfContents({ toc }: TableOfContentsProps) {
 
     return (
         <div className="hidden xl:block">
-            <div className="fixed top-16 -mt-10 h-[calc(100vh-3.5rem)] min-w-[240px] max-w-[240px] overflow-y-auto pt-16">
+            <div className="fixed  -mt-10 h-[calc(100vh-3.5rem)] min-w-[240px] max-w-[240px] overflow-y-auto ">
                 <div className="space-y-2">
                     <p className="font-medium">目录</p>
                     <div className="space-y-1">
