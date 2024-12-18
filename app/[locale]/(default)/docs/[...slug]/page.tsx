@@ -13,10 +13,10 @@ import { TableOfContents } from '@/components/docs/TableOfContents'
 import { Doc } from '@/types/docs'
 
 interface DocPageProps {
-  params: {
+  params: Promise<{
     slug?: string[]
     locale: string
-  }
+  }>
 }
 
 // 添加格式化 slug 的辅助函数
@@ -35,16 +35,16 @@ function formatSlug(path: string): string {
 }
 
 async function getDocFromParams(params: DocPageProps['params']) {
-  const slug = params.slug?.join('/') || ''
-  const locale = params.locale
+  const resolvedParams = await params
+  const slug = resolvedParams.slug?.join('/') || ''
+  const locale = resolvedParams.locale
 
-  // 添加类型断言
-  const localeDocs = allDocs.filter(doc => {
+  // 修改类型转换方式
+  const localeDocs = (allDocs.filter(doc => {
     const docLocale = doc.filePath.split('/')[1]
     return docLocale === locale
-  }) as Doc[]
+  }) as unknown) as Doc[]
 
-  // 在过滤后的文档中查找，使用格式化后的路径进行比较
   const doc = localeDocs.find((doc) => {
     const formattedDocSlug = formatSlug(doc.path)
     return slug === ''
@@ -61,7 +61,10 @@ async function getDocFromParams(params: DocPageProps['params']) {
 
 export async function generateMetadata({
   params,
-}: DocPageProps): Promise<Metadata> {
+}: {
+  params: Promise<{ slug?: string[]; locale: string }>
+}): Promise<Metadata> {
+  const resolvedParams = await params
   const doc = await getDocFromParams(params)
   if (!doc) {
     return {}
@@ -70,51 +73,54 @@ export async function generateMetadata({
   return genPageMetadata({
     title: doc.title,
     description: doc.description,
-    params: { locale: params.locale },
+    params: { locale: resolvedParams.locale },
   })
 }
 
 export default async function DocPage({ params }: DocPageProps) {
+  const resolvedParams = await params
   const doc = await getDocFromParams(params)
 
   if (!doc) {
     notFound()
   }
 
-  // 添加类型断言
+  // 在当前语言的文档中查找前后文档
   const localeDocs = allDocs.filter(doc => {
     const docLocale = doc.filePath.split('/')[1]
-    return docLocale === params.locale
-  }) as Doc[]
+    return docLocale === resolvedParams.locale
+  })
 
   const docIndex = localeDocs.findIndex((d) => {
     const formattedDocSlug = formatSlug(d.slugAsParams)
-    return formattedDocSlug === (params.slug?.join('/') || 'index')
+    return formattedDocSlug === (resolvedParams.slug?.join('/') || 'index')
   })
 
-  const prev = localeDocs[docIndex - 1]
-  const next = localeDocs[docIndex + 1]
-
-  // 处理相关链接
-  const relatedLinks = doc.related ? {
-    ...doc.related,
-    // 如果没有 href，使用 path
-    href: (doc.related as any).href || (doc.related as any).path
-  } : undefined
+  const prev = localeDocs[docIndex + 1]
+  const next = localeDocs[docIndex - 1]
 
   return (
-    <div className="flex">
-      <article className="container relative max-w-3xl py-6 lg:py-10">
-        {params.slug?.length ? <DocBreadcrumb slug={params.slug} /> : null}
-        <DocHeading title={doc.title} description={doc.description} />
-        <div className="prose dark:prose-invert max-w-none">
-          <MDXLayoutRenderer code={doc.body.code} components={components} />
+    <div className="container relative">
+      <div className="flex flex-col lg:flex-row lg:gap-10">
+        {/* 主要内容区域 */}
+        <article className="w-full lg:w-[calc(100%-250px)] py-6 lg:py-10">
+          {resolvedParams.slug?.length ? <DocBreadcrumb slug={resolvedParams.slug} /> : null}
+          <DocHeading title={doc.title} description={doc.description} />
+          {doc.related && <DocLinks links={doc.related as any} />}
+          <div className="prose dark:prose-invert max-w-none">
+            <MDXLayoutRenderer code={doc.body.code} components={components} />
+          </div>
+          <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
+          <DocsPager prev={prev} next={next} />
+        </article>
+
+        {/* 右侧目录 */}
+        <div className="hidden lg:block w-[250px] flex-shrink-0">
+          <div className="sticky top-16 overflow-y-auto pt-6">
+            <TableOfContents toc={doc.toc || []} />
+          </div>
         </div>
-        <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
-        {relatedLinks && <DocLinks links={relatedLinks} />}
-        <DocsPager prev={prev} next={next} />
-      </article>
-      <TableOfContents toc={doc.headings} />
+      </div>
     </div>
   )
 }

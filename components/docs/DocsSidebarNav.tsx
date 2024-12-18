@@ -164,9 +164,8 @@ export function DocsSidebarNav({
                 const formattedPath = formatDocPath(doc.path, resolvedParams.locale)
 
                 return (
-                  <li >
+                  <li key={`${doc.slugAsParams}-${index}`}>
                     <Link
-                      key={`${doc.slugAsParams}-${index}`}
                       href={formattedPath}
                       className={cn(
                         "flex w-full items-center rounded-md p-2 text-sm hover:underline",
