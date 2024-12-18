@@ -16,26 +16,23 @@ const API_WHITELIST = [
 ];
 
 export async function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, search } = request.nextUrl;
   
   // 添加调试日志
   console.log("Middleware processing path:", pathname);
 
-  // 1. Webhook 处理 - 移到最前面并简化逻辑
+  // 1. Webhook 处理
   if (pathname === `${API_PREFIX}/webhook/stripe`) {
     console.log("Webhook request detected, bypassing all middleware");
-    return; // 直接放行 webhook 请求，不做任何处理
+    return;
   }
 
   // 2. API 路由处理
   if (pathname.startsWith(API_PREFIX)) {
-    // 检查是否在白名单中
     if (API_WHITELIST.some((path) => pathname.startsWith(path))) {
       console.log("Whitelisted API path:", pathname);
-      return; // 白名单 API 直接放行
+      return;
     }
-    
-    // 其他 API 请求需要进行会话验证
     return await updateSession(request);
   }
 
@@ -48,13 +45,16 @@ export async function middleware(request: NextRequest) {
   const handleI18nRouting = createMiddleware({
     ...routing,
     locales: routing.locales,
-    localePrefix: "as-needed",
+    localePrefix: "always",
     defaultLocale: "en",
     localeDetection: true,
     pathnames: {
       "/": "/",
       "/tags": "/tags",
       "/blog": "/blog",
+      "/blog/:path*": "/blog/:path*",
+      "/docs": "/docs",
+      "/docs/:path*": "/docs/:path*",
       "/payment/success": "/payment/success",
       "/payment/cancel": "/payment/cancel",
       "/api/webhooktest": "/api/webhooktest",
@@ -71,16 +71,18 @@ export async function middleware(request: NextRequest) {
   return response;
 }
 
-// 更新 matcher 配置，确保 webhook 路径被正确处理
+// 更新 matcher 配置
 export const config = {
   matcher: [
-    // 明确包含 webhook 路径
+    // webhook 路径
     "/api/webhook/stripe",
     "/api/webhooktest",
     // 其他匹配规则
     "/((?!_next/static|_next/image|favicon.ico|.*\\..*).*)",
     "/",
-    "/(zh)/:path*",
+    "/(en|zh)/:path*",
+    "/docs/:path*",
+    "/blog/:path*",
     "/payment/:path*",
     "/api/:path*",
   ],

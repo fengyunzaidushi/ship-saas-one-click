@@ -221,7 +221,6 @@ export const Doc = defineDocumentType(() => ({
     related: { type: "nested", of: LinksProperties,required:false},
     toc: { type: "boolean", default: true },
     published: { type: "boolean", default: true },
-    order: { type: "number" },
   },
   computedFields: {
     ...computedFields,
@@ -252,6 +251,13 @@ export const Doc = defineDocumentType(() => ({
         return locale === "en"
           ? `/docs/${restOfPath}`
           : `/${locale}/docs/${restOfPath}`;
+      },
+    },
+    headings: {
+      type: 'json',
+      resolve: async (doc) => {
+        const headings = extractTocHeadings(doc.body.raw)
+        return headings
       },
     },
   },
