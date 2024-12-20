@@ -43,3 +43,4 @@ next-env.d.ts
 note.md
 test-webhook.ts
 test*.json
+assistant_snippet_*.txt

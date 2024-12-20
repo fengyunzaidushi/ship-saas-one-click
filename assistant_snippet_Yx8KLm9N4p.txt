@@ -1,8 +1,0 @@
-1|让我理解一下问题...
-2|
-3|需要修改:
-4|1. 在page.tsx中传递locale参数给DocsPager组件
-5|2. 修改DocsPager.tsx接收locale参数
-6|3. 移除useParams的使用
-7|
-8|让我开始修改... 
