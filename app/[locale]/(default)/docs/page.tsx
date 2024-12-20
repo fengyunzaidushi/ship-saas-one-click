@@ -39,7 +39,7 @@ export default async function DocsPage({ params }: PageProps) {
     })
 
     // 找到第一个文档作为默认重定向目标
-    const firstDoc = docs.find(doc => doc.slugAsParams.includes('getting-started'))
+    const firstDoc = docs.find(doc => doc.filePath.includes('index.mdx'))
 
     if (!firstDoc) {
         // 如果没有找到文档，重定向到 404 页面或首页

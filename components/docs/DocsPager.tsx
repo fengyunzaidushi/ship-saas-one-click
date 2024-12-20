@@ -3,8 +3,8 @@ import { Doc } from 'contentlayer/generated'
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons'
 
 interface DocsPagerProps {
-  prev?: Doc
-  next?: Doc
+  prev?: Doc & { href: string }
+  next?: Doc & { href: string }
 }
 
 export default function DocsPager({ prev, next }: DocsPagerProps) {
@@ -12,7 +12,7 @@ export default function DocsPager({ prev, next }: DocsPagerProps) {
     <div className="flex flex-row items-center justify-between">
       {prev && (
         <Link
-          href={prev.path}
+          href={prev.href}
           className="inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm text-foreground hover:bg-accent"
         >
           <ArrowLeftIcon className="mr-2 h-4 w-4" />
@@ -21,7 +21,7 @@ export default function DocsPager({ prev, next }: DocsPagerProps) {
       )}
       {next && (
         <Link
-          href={next.path}
+          href={next.href}
           className="ml-auto inline-flex items-center justify-center rounded-lg border px-4 py-2 text-sm text-foreground hover:bg-accent"
         >
           {next.nav_title || next.title}

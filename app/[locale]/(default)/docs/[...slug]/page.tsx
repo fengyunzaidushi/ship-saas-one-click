@@ -34,6 +34,29 @@ function formatSlug(path: string): string {
     .join('/')
 }
 
+// 添加格式化路径的辅助函数
+function formatDocPath(path: string, locale: string): string {
+  // 分割路径
+  const parts = path.split('/')
+
+  // 找到 docs 后的部分
+  const docsIndex = parts.findIndex(part => part === 'docs')
+  const pathParts = parts.slice(docsIndex + 1)
+
+  // 格式化每个部分并重新组合
+  const formattedParts = pathParts
+    .map(part => part.replace(/^\d+-/, ''))  // 移除每个部分的数字前缀
+    .filter(Boolean)  // 移除空字符串
+    .join('/')
+
+  // 构建最终路径
+  if (locale === 'en') {
+    return `/docs/${formattedParts}`
+  }
+
+  return `/${locale}/docs/${formattedParts}`
+}
+
 async function getDocFromParams(params: DocPageProps['params']) {
   const resolvedParams = await params
   const slug = resolvedParams.slug?.join('/') || ''
@@ -90,14 +113,43 @@ export default async function DocPage({ params }: DocPageProps) {
     const docLocale = doc.filePath.split('/')[1]
     return docLocale === resolvedParams.locale
   })
+    .sort((a, b) => {
+      // 首先处理 index.mdx
+      if (a.filePath.endsWith('index.mdx')) return -1
+      if (b.filePath.endsWith('index.mdx')) return 1
+
+      // 获取文件路径部分
+      const aPath = a.filePath.split('/').slice(2)  // 跳过第一个和locale部分
+      const bPath = b.filePath.split('/').slice(2)
+
+      // 比较文件夹前缀
+      const aFolderNum = parseInt(aPath[0].match(/^(\d+)-/)?.[1] || '0')
+      const bFolderNum = parseInt(bPath[0].match(/^(\d+)-/)?.[1] || '0')
+      if (aFolderNum !== bFolderNum) {
+        return aFolderNum - bFolderNum
+      }
+
+      // 如果在同一个文件夹，比较文件前缀
+      const aFileNum = parseInt(aPath[1]?.match(/^(\d+)-/)?.[1] || '0')
+      const bFileNum = parseInt(bPath[1]?.match(/^(\d+)-/)?.[1] || '0')
+      return aFileNum - bFileNum
+    })
 
   const docIndex = localeDocs.findIndex((d) => {
-    const formattedDocSlug = formatSlug(d.slugAsParams)
+    // 从第2个元素开始拼接，跳过语言前缀
+    const formattedDocSlug = formatSlug(d.slugAsParams.split('/').slice(1).join('/'))
     return formattedDocSlug === (resolvedParams.slug?.join('/') || 'index')
   })
 
-  const prev = localeDocs[docIndex + 1]
-  const next = localeDocs[docIndex - 1]
+  // 修正prev和next的获取逻辑,并添加路径格式化
+  const prev = docIndex > 0 ? {
+    ...localeDocs[docIndex - 1],
+    href: formatDocPath(localeDocs[docIndex - 1].path, resolvedParams.locale)
+  } : null
+  const next = docIndex < localeDocs.length - 1 ? {
+    ...localeDocs[docIndex + 1],
+    href: formatDocPath(localeDocs[docIndex + 1].path, resolvedParams.locale)
+  } : null
 
   return (
     <div className="container relative">

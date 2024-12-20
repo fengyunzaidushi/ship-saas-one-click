@@ -102,6 +102,12 @@ function formatDocPath(path: string, locale: string): string {
   return `/${locale}/docs/${formattedParts.join('/')}`
 }
 
+// 添加检查index文件的辅助函数
+function getGroupIndexPath(items: DocItem[]): string | null {
+  const indexDoc = items.find(doc => doc.filePath.endsWith('index.mdx'))
+  return indexDoc ? indexDoc.path : null
+}
+
 export function DocsSidebarNav({
   params
 }: {
@@ -140,52 +146,81 @@ export function DocsSidebarNav({
 
   return (
     <nav className="w-full" role="navigation" aria-label="Documentation sidebar">
-      {groups.map((group) => (
-        <div key={group.id} className="pb-8">
-          <button
-            onClick={() => toggleGroup(group.id)}
-            className="flex w-full items-center justify-between mb-1 rounded-md px-2 py-1 text-sm font-semibold hover:bg-accent/50 transition-colors"
-          >
-            {cleanText(group.title)}
-            <ChevronRight
-              className={cn(
-                "h-4 w-4 transition-transform",
-                expandedGroups[group.id] ? "transform rotate-90" : ""
-              )}
-            />
-          </button>
-          <div className={cn(
-            "transition-all duration-200 ease-in-out",
-            expandedGroups[group.id] ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-          )}>
-            <ul className="space-y-1">
-              {group.items.map((doc, index) => {
-                // 格式化文档路径
-                const formattedPath = formatDocPath(doc.path, resolvedParams.locale)
+      {groups.map((group) => {
+        const indexPath = getGroupIndexPath(group.items)
+        const formattedIndexPath = indexPath ? formatDocPath(indexPath, resolvedParams.locale) : null
 
-                return (
-                  <li key={`${doc.slugAsParams}-${index}`}>
-                    <Link
-                      href={formattedPath}
-                      className={cn(
-                        "flex w-full items-center rounded-md p-2 text-sm hover:underline",
-                        pathname === formattedPath
-                          ? "font-medium text-primary"
-                          : "text-muted-foreground"
-                      )}
-                      aria-current={pathname === formattedPath ? 'page' : undefined}
-                    >
-                      <div>
-                        <div>{cleanText(doc.nav_title || doc.title)}</div>
-                      </div>
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
+        return (
+          <div key={group.id} className="pb-8">
+            {formattedIndexPath ? (
+              <div className="flex items-center">
+                <Link
+                  href={formattedIndexPath}
+                  className="flex-grow flex items-center rounded-md px-2 py-1 text-sm font-semibold hover:bg-accent/50 transition-colors"
+                >
+                  {cleanText(group.title)}
+                </Link>
+                <button
+                  onClick={() => toggleGroup(group.id)}
+                  className="p-1 hover:bg-accent/50 rounded-md"
+                >
+                  <ChevronRight
+                    className={cn(
+                      "h-4 w-4 transition-transform",
+                      expandedGroups[group.id] ? "transform rotate-90" : ""
+                    )}
+                  />
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => toggleGroup(group.id)}
+                className="flex w-full items-center justify-between mb-1 rounded-md px-2 py-1 text-sm font-semibold hover:bg-accent/50 transition-colors"
+              >
+                {cleanText(group.title)}
+                <ChevronRight
+                  className={cn(
+                    "h-4 w-4 transition-transform",
+                    expandedGroups[group.id] ? "transform rotate-90" : ""
+                  )}
+                />
+              </button>
+            )}
+            <div className={cn(
+              "transition-all duration-200 ease-in-out",
+              expandedGroups[group.id] ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+            )}>
+              <ul className="space-y-1">
+                {group.items
+                  .filter(doc => !doc.filePath.endsWith('index.mdx'))
+                  .map((doc, index) => {
+                    // 格式化文档路径
+                    const formattedPath = formatDocPath(doc.path, resolvedParams.locale)
+
+                    return (
+                      <li key={`${doc.slugAsParams}-${index}`}>
+                        <Link
+                          href={formattedPath}
+                          className={cn(
+                            "flex w-full items-center rounded-md p-2 text-sm hover:underline",
+                            pathname === formattedPath
+                              ? "font-medium text-primary"
+                              : "text-muted-foreground"
+                          )}
+                          aria-current={pathname === formattedPath ? 'page' : undefined}
+                        >
+                          <div>
+                            <div>{cleanText(doc.nav_title || doc.title)}</div>
+                          </div>
+                        </Link>
+                      </li>
+                    )
+                  })}
+              </ul>
+            </div>
           </div>
-        </div>
-      ))}
+        )
+      })}
     </nav>
   )
 } 

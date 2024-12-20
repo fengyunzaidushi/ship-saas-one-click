@@ -62,7 +62,7 @@ const siteMetadata: SiteMetadata = {
   medium: "https://medium.com",
   bluesky: "https://bsky.app/",
   locale: "en-US",
-  stickyNav: false,
+  stickyNav: true,
   analytics: {
     umamiAnalytics: {
       umamiWebsiteId: process.env.NEXT_UMAMI_ID,

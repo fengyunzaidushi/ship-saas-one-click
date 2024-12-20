@@ -1,0 +1,20 @@
+1|让我理解一下问题...
+2|
+3|当前导航的问题:
+4|1. 访问 index.md 时:
+5|   - 下一篇指向了 /getting-started (当前group的01文档)
+6|   - 应该指向 /getting-started/installation (第一个group的第一个文档)
+7|
+8|2. 访问 /getting-started/installation 时:
+9|   - 上一篇指向 /getting-started (group.title)
+10|   - 应该指向 index.md
+11|   - 下一篇指向 /getting-started/project-structure (正确)
+12|
+13|3. 访问 /getting-started/project-structure 时:
+14|   - 上一篇指向 /getting-started/installation (正确)
+15|
+16|问题在于:
+17|1. 文档顺序没有考虑整体顺序
+18|2. 需要按照 index -> group1/doc1 -> group1/doc2 -> group2/doc1 这样的顺序排列
+19|
+20|让我修改代码来修复这个问题... 
