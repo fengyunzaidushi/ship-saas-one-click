@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { use } from 'react';
 import { CharacterInfo, GeneratedName, ConfigType } from '@/types/name-generators'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"

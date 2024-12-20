@@ -32,9 +32,13 @@ const TestimonialsGrid = ({ items }: { items: Item[] }) => (
   </div>
 );
 
-export default function () {
+export default function Testimonial() {
   const t = useTranslations('saas_one.testimonial');
-  const items = (t.raw('items') as any[]) || [];
+  const items = t.raw('items');
+
+  if (!items || !Array.isArray(items) || items.length === 0) {
+    return null;
+  }
 
   return (
     <div className="py-8 sm:py-16">
@@ -47,7 +51,7 @@ export default function () {
             {t('description')}
           </div>
         </div>
-        {items && <TestimonialsGrid items={items} />}
+        <TestimonialsGrid items={items} />
       </div>
     </div>
   );

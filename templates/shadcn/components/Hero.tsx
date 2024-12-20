@@ -1,11 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-export default function () {
+
+export default function Hero() {
     const t = useTranslations('saas_one.hero');
-    const buttons = (t.raw('buttons') as any[]) || [];
+    const buttons = t.raw('buttons');
     const hasImage = t.raw('image');
+
+    // 确保buttons是数组
+    const validButtons = Array.isArray(buttons) ? buttons : [];
 
     return (
         <div className="bg-gradient-to-t from-zinc-50 to-white dark:from-zinc-950 dark:to-black relative">
@@ -18,29 +21,31 @@ export default function () {
                     <p className="text-xl sm:text-2xl text-muted-foreground mb-8">
                         {t('description')}
                     </p>
-                    <div className="flex flex-row justify-center gap-4">
-                        {buttons?.map((v, idx) => (
-                            <Link key={idx} href={v.url || ""} target={"_self"}>
-                                <Button
-                                    key={idx}
-                                    size="lg"
-                                    variant={v.theme === "outline" ? "outline" : "default"}
-                                >
-                                    {v.title}
-                                </Button>
-                            </Link>
-                        ))}
-                    </div>
+                    {validButtons.length > 0 && (
+                        <div className="flex flex-row justify-center gap-4">
+                            {validButtons.map((v, idx) => (
+                                <Link key={idx} href={v.url || ""} target={"_self"}>
+                                    <Button
+                                        key={idx}
+                                        size="lg"
+                                        variant={v.theme === "outline" ? "outline" : "default"}
+                                    >
+                                        {v.title}
+                                    </Button>
+                                </Link>
+                            ))}
+                        </div>
+                    )}
                     {t("tip") && <p className="mt-4 text-sm text-gray-500">{t('tip')}</p>}
                 </div>
 
-                {/* {hasImage && (
+                {hasImage && (
                     <img
                         alt={t('image.title')}
                         src={t('image.src')}
                         className="mt-8 max-w-full md:max-w-5xl mx-auto rounded-md shadow-2xl border sm:mt-12 block dark:hidden"
                     />
-                )} */}
+                )}
             </div>
         </div>
     );

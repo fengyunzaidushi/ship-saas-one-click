@@ -1,8 +1,14 @@
 import { Item, Section } from "@/types/landing";
 import { useTranslations } from "next-intl";
-export default function () {
+
+export default function Feature() {
   const t = useTranslations('saas_one.feature');
-  const items = (t.raw('items') as Item[]) || [];
+  const items = t.raw('items');
+
+  // 处理items为undefined或空数组的情况
+  if (!items || !Array.isArray(items) || items.length === 0) {
+    return null;
+  }
 
   return (
     <div className="bg-gradient-to-t py-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">

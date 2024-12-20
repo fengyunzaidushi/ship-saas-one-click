@@ -2,13 +2,12 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-// 定义按钮类型接口
-
-export default function () {
+export default function Cta() {
     const t = useTranslations('saas_one.cta');
+    const buttons = t.raw('buttons');
 
-    // 使用类型断言来指定buttons的类型
-    const buttons = t.raw('buttons') as any[] || [];
+    // 确保buttons是数组
+    const validButtons = Array.isArray(buttons) ? buttons : [];
 
     return (
         <section className="bg-gradient-to-t from-zinc-50 to-white dark:from-zinc-950 relative">
@@ -18,26 +17,25 @@ export default function () {
                     <h2 className="text-red-500 text-3xl font-bold tracking-tight text-primary sm:text-3xl text-center lg:text-5xl">
                         {t('title')}
                     </h2>
-                    {/* <h2 className="text-4xl  text-red-500 sm:text-3xl lg:text-blue-500  lg:text-5xl">
-                        测试文本
-                    </h2> */}
                     <p className="mt-6 text-xl leading-8 opacity-90 text-muted-foreground">
                         {t('description')}
                     </p>
-                    <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-                        {buttons?.map((v, idx) => (
-                            <Link key={idx} href={v.url || ""} target={v.target || "_blank"}>
-                                <Button
-                                    key={idx}
-                                    size="lg"
-                                    variant={v.theme === "outline" ? "outline" : "default"}
-                                    className="w-full sm:w-auto"
-                                >
-                                    {v.title}
-                                </Button>
-                            </Link>
-                        ))}
-                    </div>
+                    {validButtons.length > 0 && (
+                        <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                            {validButtons.map((v, idx) => (
+                                <Link key={idx} href={v.url || ""} target={v.target || "_blank"}>
+                                    <Button
+                                        key={idx}
+                                        size="lg"
+                                        variant={v.theme === "outline" ? "outline" : "default"}
+                                        className="w-full sm:w-auto"
+                                    >
+                                        {v.title}
+                                    </Button>
+                                </Link>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
         </section>

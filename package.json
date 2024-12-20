@@ -53,7 +53,9 @@
     "dayjs": "^1.11.13",
     "embla-carousel-react": "^8.3.1",
     "esbuild": "0.20.2",
+    "framer-motion": "^11.15.0",
     "github-slugger": "^2.0.0",
+    "glob": "^10.4.5",
     "gray-matter": "^4.0.2",
     "hast-util-from-html-isomorphic": "^2.0.0",
     "image-size": "1.0.0",
@@ -90,8 +92,7 @@
     "sugar-high": "^0.7.5",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
-    "unist-util-visit": "^5.0.0",
-    "glob": "^10.4.5"
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "@headlessui/react": "^2.2.0",

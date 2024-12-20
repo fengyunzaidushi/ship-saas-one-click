@@ -25,9 +25,8 @@ const Feature: FC<{ section: Section }> = ({ section }) => (
       </div>
     )}
     <div
-      className={`order-2 ${
-        section.image_position === "left" ? "md:order-2" : "md:order-1"
-      }`}
+      className={`order-2 ${section.image_position === "left" ? "md:order-2" : "md:order-1"
+        }`}
     >
       <h2 className="text-3xl font-bold tracking-tight text-primary sm:text-4xl">
         {section.title}
@@ -82,17 +81,18 @@ const Feature: FC<{ section: Section }> = ({ section }) => (
   </div>
 );
 
-export default function () {
+export default function SectionComponent() {
   const t = useTranslations('saas_one.section');
-  const items = (t.raw('items') as any[]) || [];
-  if (items.length === 0) {
-    return;
+  const items = t.raw('items');
+
+  if (!items || !Array.isArray(items) || items.length === 0) {
+    return null;
   }
 
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8 mx-auto max-w-7xl">
       <div className="my-4 flex flex-col gap-8">
-        {items?.map((v: Section, idx: number) => (
+        {items.map((v: Section, idx: number) => (
           <Feature key={idx} section={v} />
         ))}
       </div>
