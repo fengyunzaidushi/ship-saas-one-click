@@ -10,7 +10,7 @@ import DocsPager from '@/components/docs/DocsPager'
 import { Metadata } from 'next'
 import { genPageMetadata } from '@/lib/seo'
 import { TableOfContents } from '@/components/docs/TableOfContents'
-import { Doc } from '@/types/docs'
+import type { Doc } from 'contentlayer/generated'
 
 interface DocPageProps {
   params: Promise<{
@@ -129,7 +129,7 @@ export default async function DocPage({ params }: DocPageProps) {
         return aFolderNum - bFolderNum
       }
 
-      // 如果在同一个文件夹，比较文件前缀
+      // 如果是同一个文件夹，比较文件前缀
       const aFileNum = parseInt(aPath[1]?.match(/^(\d+)-/)?.[1] || '0')
       const bFileNum = parseInt(bPath[1]?.match(/^(\d+)-/)?.[1] || '0')
       return aFileNum - bFileNum
@@ -141,15 +141,9 @@ export default async function DocPage({ params }: DocPageProps) {
     return formattedDocSlug === (resolvedParams.slug?.join('/') || 'index')
   })
 
-  // 修正prev和next的获取逻辑,并添加路径格式化
-  const prev = docIndex > 0 ? {
-    ...localeDocs[docIndex - 1],
-    href: formatDocPath(localeDocs[docIndex - 1].path, resolvedParams.locale)
-  } : null
-  const next = docIndex < localeDocs.length - 1 ? {
-    ...localeDocs[docIndex + 1],
-    href: formatDocPath(localeDocs[docIndex + 1].path, resolvedParams.locale)
-  } : null
+  // 修正prev和next的获取逻辑
+  const prev = docIndex > 0 ? localeDocs[docIndex - 1] : null
+  const next = docIndex < localeDocs.length - 1 ? localeDocs[docIndex + 1] : null
 
   return (
     <div className="container relative">
@@ -167,13 +161,13 @@ export default async function DocPage({ params }: DocPageProps) {
             <MDXLayoutRenderer code={doc.body.code} components={components} />
           </div>
           <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
-          <DocsPager prev={prev} next={next} />
+          <DocsPager prev={prev} next={next} locale={resolvedParams.locale} />
         </article>
 
         {/* 右侧目录 */}
         <div className="hidden lg:block w-[250px] flex-shrink-0">
           <div className="sticky  overflow-y-auto pt-10">
-            <TableOfContents toc={doc.toc || []} />
+            <TableOfContents toc={doc.toc as any} />
           </div>
         </div>
       </div>

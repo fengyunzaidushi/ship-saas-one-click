@@ -85,7 +85,7 @@ export default async function DocPage({ params }: DocPageProps) {
         <MDXLayoutRenderer code={doc.body.code} components={components} />
       </div>
       <hr className="my-4 border-neutral-200 dark:border-neutral-800" />
-      <DocsPager prev={prev} next={next} />
+      <DocsPager prev={prev} next={next} locale={params.locale} />
     </article>
   )
 }

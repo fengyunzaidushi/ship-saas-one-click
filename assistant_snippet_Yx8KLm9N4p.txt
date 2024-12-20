@@ -1,17 +1,8 @@
 1|让我理解一下问题...
 2|
-3|问题在于:
-4|1. DocsPager组件接收的prev和next类型是Doc
-5|2. 但我们在page.tsx中添加了href属性
-6|3. 需要修改DocsPager.tsx中的类型定义
+3|需要修改:
+4|1. 在page.tsx中传递locale参数给DocsPager组件
+5|2. 修改DocsPager.tsx接收locale参数
+6|3. 移除useParams的使用
 7|
-8|解决方案:
-9|1. 扩展DocsPagerProps中的类型定义
-10|2. 添加href属性
-11|
-12|我看到问题在于:
-13|1. formatDocPath函数中虽然有去除数字前缀的代码
-14|2. 但是传入的path可能已经包含了数字前缀
-15|3. 需要确保在所有层级都正确去除数字前缀
-16|
-17|让我修改代码... 
+8|让我开始修改... 
