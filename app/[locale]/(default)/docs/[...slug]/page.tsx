@@ -72,7 +72,7 @@ async function getDocFromParams(params: DocPageProps['params']) {
     const formattedDocSlug = formatSlug(doc.path)
     return slug === ''
       ? formattedDocSlug === 'index'
-      : formattedDocSlug === slug
+      : formattedDocSlug === decodeURIComponent(slug)
   })
 
   if (!doc) {
