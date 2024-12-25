@@ -135,3 +135,7 @@ body {
   color: hsl(var(--secondary-foreground));
   border: 1px solid hsl(var(--secondary-foreground));
 }
+
+.linkicon {
+  display: none;
+}
