@@ -8,9 +8,10 @@
 
 ### AI 生成功能
 
-- 🎨 一键生成专业落地页
-- 📝 AI辅助生成博客文章
-- 👥 小说角色名字生成器
+- 🎨 一键生成专业落地页  && 一键翻译多语言
+- 📝 MDX格式博客文档支持 && 一键翻译多语言
+- 👥 小说角色名字生成器  && 一键翻译多语言
+- 📚 MDX格式文档站支持   && 一键翻译多语言
 
 ### 系统功能
 
@@ -62,7 +63,7 @@ STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 
-# one time price id 
+# one time price id
 NEXT_PUBLIC_STRIPE_PRICE_ID_BASIC=price_basic_plan_usd
 NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 
@@ -77,7 +78,8 @@ NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 5. 配置数据库
    ```bash
    # 创建角色表 在supabase sql editor中执行下面文件中的sql:
-   /supabase/migrations/20240320000000_create_characters_table.sql
+   `sql/create_character_payment_table.sql`
+   `sql/create_character_profile_table.sql`
    ```
 
 ## 📝 使用说明
@@ -87,7 +89,7 @@ NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 - 修改 messages/zh.json 和 messages/en.json 中的内容
 - 一键生成多语言专业落地页（其他语言同理）
 
-### 博客mdx文档批量翻译
+### api文档、博客等mdx文档批量翻译
 
 - 进入translateblogs/translate目录
 - 修改translate.py中的源语言和目标语言
@@ -100,6 +102,13 @@ NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 - 访问角色名字生成页面
 - 设置角色参数
 - 生成独特的角色描述
+
+### 文档站使用
+
+- 在 `data/docs` 目录下创建或修改markdown文档
+- 支持MDX格式，可嵌入React组件
+- 自动生成文档目录和导航
+- 一键翻译文档内容为多语言版本
 
 ## 🔜 开发计划
 
@@ -129,4 +138,3 @@ NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
-

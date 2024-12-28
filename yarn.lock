@@ -6478,6 +6478,13 @@ katex@^0.16.0:
   dependencies:
     commander "^8.3.0"
 
+katex@^0.16.18:
+  version "0.16.18"
+  resolved "https://registry.npmjs.org/katex/-/katex-0.16.18.tgz#20781284288bc52805c519e48ac756163ad4b1f3"
+  integrity sha512-LRuk0rPdXrecAFwQucYjMiIs0JFefk6N1q/04mlw14aVIVgxq1FO0MA9RiIIGVaKOB5GIP5GH4aBBNraZERmaQ==
+  dependencies:
+    commander "^8.3.0"
+
 kbar@0.1.0-beta.45:
   version "0.1.0-beta.45"
   resolved "https://registry.npmjs.org/kbar/-/kbar-0.1.0-beta.45.tgz#6b0871f2860a7fe21ad4db5df2389cf3b73d344a"
@@ -8488,7 +8495,7 @@ rehype-katex-notranslate@^1.1.4:
     unified "^11.0.5"
     unist-util-visit "^5.0.0"
 
-rehype-katex@^7.0.0:
+rehype-katex@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/rehype-katex/-/rehype-katex-7.0.1.tgz#832e6d7af2744a228981d1b0fe89483a9e7c93a1"
   integrity sha512-OiM2wrZ/wuhKkigASodFoo8wimG3H12LWQaH8qSPVJn9apWKFSH3YOCtbKpBorTVw/eI7cuT21XBbvwEswbIOA==

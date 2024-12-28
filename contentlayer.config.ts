@@ -64,6 +64,16 @@ const computedFields: ComputedFields = {
     resolve: (doc) => doc._raw.sourceFilePath,
   },
   toc: { type: "json", resolve: (doc) => extractTocHeadings(doc.body.raw) },
+  reading_time: {
+    type: "string",
+    resolve: (doc) => {
+      const wordsPerMinute = doc.locale === "zh" ? 300 : 200; // 中文300字/分钟,英文200词/分钟
+      const content = doc.body.raw;
+      const wordCount = content.split(/\s+/g).length;
+      const minutes = Math.ceil(wordCount / wordsPerMinute);
+      return `${minutes} min`;
+    },
+  },
 };
 
 const docComputedFields: ComputedFields = {
@@ -76,8 +86,7 @@ const docComputedFields: ComputedFields = {
     type: "string",
     resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
   },
-
-}
+};
 
 /**
  * Count the occurrences of all tags across blog posts and write to json file
@@ -105,21 +114,21 @@ function createTagCount(allBlogs) {
 
 function createSearchIndex(allBlogs) {
   if (
-    siteMetadata?.search?.provider === 'kbar' &&
+    siteMetadata?.search?.provider === "kbar" &&
     siteMetadata.search.kbarConfig.searchDocumentsPath
   ) {
     // 修改搜索索引数据，确保包含完整的URL
-    const searchData = allCoreContent(sortPosts(allBlogs)).map(post => ({
+    const searchData = allCoreContent(sortPosts(allBlogs)).map((post) => ({
       ...post,
       // 确保 path 是完整的 URL 路径
-      path: post.path.startsWith('/') ? post.path : `/${post.path}`,
+      path: post.path.startsWith("/") ? post.path : `/${post.path}`,
     }));
 
     writeFileSync(
       `public/${path.basename(siteMetadata.search.kbarConfig.searchDocumentsPath)}`,
       JSON.stringify(searchData)
     );
-    console.log('Local search index generated...');
+    console.log("Local search index generated...");
   }
 }
 
@@ -131,11 +140,10 @@ export const Blog = defineDocumentType(() => ({
     title: { type: "string", required: true },
     locale: {
       type: "string",
-      required: true,
       description: "The language of the post (en or zh)",
       default: "en",
     },
-    date: { type: "date", required: true },
+    date: { type: "date" },
     tags: { type: "list", of: { type: "string" }, default: [] },
     lastmod: { type: "date" },
     draft: { type: "boolean" },
@@ -144,6 +152,7 @@ export const Blog = defineDocumentType(() => ({
     },
     images: { type: "json" },
     authors: { type: "list", of: { type: "string" } },
+    author: { type: "string" },
     layout: { type: "string" },
     bibliography: { type: "string" },
     canonicalUrl: { type: "string" },
@@ -156,7 +165,9 @@ export const Blog = defineDocumentType(() => ({
         const pathSegments = doc._raw.flattenedPath.split("/");
         const locale = pathSegments[1];
         const restOfPath = pathSegments.slice(2).join("/");
-        return locale === 'en' ? `/blog/${restOfPath}` : `/${locale}/blog/${restOfPath}`;
+        return locale === "en"
+          ? `/blog/${restOfPath}`
+          : `/${locale}/blog/${restOfPath}`;
       },
     },
     slug: {
@@ -218,9 +229,9 @@ export const Doc = defineDocumentType(() => ({
     title: { type: "string", required: true },
     description: { type: "string" },
     nav_title: { type: "string" },
-    related: { type: "nested", of: LinksProperties,required:false},
-    toc: { type: "boolean", default: true },
-    published: { type: "boolean", default: true },
+    related: { type: "nested", of: LinksProperties, required: false },
+    toc: { type: "boolean", default: false },
+    published: { type: "boolean", default: false },
   },
   computedFields: {
     ...computedFields,
@@ -235,10 +246,7 @@ export const Doc = defineDocumentType(() => ({
     slugAsParams: {
       type: "string",
       resolve: (doc) => {
-        const segments = doc._raw.flattenedPath
-          .split("/")
-          .slice(1)
-          .join("/");
+        const segments = doc._raw.flattenedPath.split("/").slice(1).join("/");
         return segments;
       },
     },
@@ -254,15 +262,14 @@ export const Doc = defineDocumentType(() => ({
       },
     },
     headings: {
-      type: 'json',
+      type: "json",
       resolve: async (doc) => {
-        const headings = extractTocHeadings(doc.body.raw)
-        return headings
+        const headings = extractTocHeadings(doc.body.raw);
+        return headings;
       },
     },
   },
 }));
-
 
 export default makeSource({
   contentDirPath: "data",
@@ -289,7 +296,17 @@ export default makeSource({
         },
       ],
       rehypeKatex,
-      rehypeKatexNoTranslate,
+      [
+        rehypeKatexNoTranslate,
+        {
+          strict: false,
+          macros: {
+            "\\eqref": "\\href{#1}",
+          },
+          throwOnError: false,
+          output: "html",
+        },
+      ],
       [rehypeCitation, { path: path.join(root, "data") }],
       [rehypePrismPlus, { defaultLanguage: "js", ignoreMissing: true }],
       rehypePresetMinify,
@@ -302,11 +319,9 @@ export default makeSource({
       // 过滤出所有的博客文档
       const allBlogs = allDocuments.filter((doc) => doc.type === "Blog");
 
-
       const files = globSync("**/blog/**/*.mdx", {
         cwd: path.join(process.cwd(), "data"),
       });
-
 
       createTagCount(allBlogs);
       createSearchIndex(allBlogs);
