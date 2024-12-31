@@ -121,6 +121,10 @@ NEXT_PUBLIC_STRIPE_PRICE_ID_PRO=price_pro_plan_usd
 - [ ] 生成的角色名字前台展示
 - [ ] 更多 AI 生成功能
 - [ ] 性能优化
+  
+## 示例项目
+
+- [cursor中文文档](https://cursordocs.com/)
 
 ## 🤝 贡献指南
 
