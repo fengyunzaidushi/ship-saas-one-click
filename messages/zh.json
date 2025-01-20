@@ -67,7 +67,7 @@
       "title": "为您的小说角色打造独特名字",
       "description": "使用小说角色名字起名器，轻松生成富有文学风格和文化底蕴的中文角色名称，助您打造鲜活的角色。",
       "image": {
-        "src": "https://placehold.co/1280x500.png",
+        "src": "/imgs/hero.png",
         "title": "小说角色名字起名器"
       },
 
@@ -97,7 +97,7 @@
           "title": "什么是小说角色名字起名器",
           "description": "小说角色名字起名器是一个专为作家和创意人士设计的在线工具，帮助生成独特且富有意义的中文角色名称。通过结合文学风格、文化背景和个性特征，提供多样化的名字选择，助您轻松打造迷人角色。",
           "image": {
-            "src": "https://placehold.co/700x500.png"
+            "src": "/imgs/section-1.png"
           },
           "image_position": "left",
           "text_align": "center",
@@ -121,7 +121,7 @@
           "title": "为什么选择小说角色名字起名器",
           "description": "选择我们的小说角色名字起名器，让创作过程更加流畅，帮助作家在故事世界中创造生动角色。",
           "image": {
-            "src": "https://placehold.co/700x500.png"
+            "src": "/imgs/section-2.png"
           },
           "image_position": "right",
           "text_align": "center",
@@ -145,7 +145,7 @@
           "title": "如何使用小说角色名字起名器",
           "description": "使用我们的工具非常简单，按照以下步骤即可生成理想的角色名字：",
           "image": {
-            "src": "https://placehold.co/700x500.png"
+            "src": "/imgs/section-3.png"
           },
           "image_position": "left",
           "text_align": "center",
@@ -228,7 +228,7 @@
           "title": "小说作家",
           "description": "这个工具真的帮了我大忙，让我轻松找到适合角色的名字，节省了大量时间。",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-1.png"
           }
         },
         {
@@ -236,7 +236,7 @@
           "title": "编剧",
           "description": "创作过程更流畅，名字风格多样，极力推荐给所有写作者！",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-2.png"
           }
         },
         {
@@ -244,7 +244,7 @@
           "title": "游戏开发者",
           "description": "为游戏角色命名变得如此简单，工具生成的名字都非常有创意。",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-3.png"
           }
         }
       ]

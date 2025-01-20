@@ -44,3 +44,4 @@ note.md
 test-webhook.ts
 test*.json
 assistant_snippet_*.txt
+.specstory/

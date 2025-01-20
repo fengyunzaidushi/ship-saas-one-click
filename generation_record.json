@@ -1,0 +1,37 @@
+{
+  "hero.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:06:03.585828",
+    "error": null
+  },
+  "section-1.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:06:22.139556",
+    "error": null
+  },
+  "section-2.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:06:33.739483",
+    "error": null
+  },
+  "section-3.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:06:54.498209",
+    "error": null
+  },
+  "avatar-1.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:07:02.432659",
+    "error": null
+  },
+  "avatar-2.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:07:13.060941",
+    "error": null
+  },
+  "avatar-3.png": {
+    "status": "success",
+    "last_attempt": "2025-01-20T21:07:20.942680",
+    "error": null
+  }
+}
