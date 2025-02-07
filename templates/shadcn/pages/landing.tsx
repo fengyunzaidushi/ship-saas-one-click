@@ -43,14 +43,14 @@ export default function ShadcnLandingPage({ locale }) {
         <Hero />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={scrollVariants}
       >
         <NameGenerator locale={locale} />
-      </motion.div>
+      </motion.div> */}
 
       <motion.div
         initial="hidden"
