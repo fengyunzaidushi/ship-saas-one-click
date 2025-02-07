@@ -88,7 +88,7 @@ def get_style_filename(style, index):
     """生成风格测试图片的文件名"""
     # 将风格名称中的/替换为_
     style_name = style.replace("/", "_")
-    return f"hero_style_{style_name}_{index:02d}.png"
+    return f"hero_style_{index:02d}_{style_name}.png"
 
 def generate_image(prompt, size, style, index, record):
     """生成单张图片"""
