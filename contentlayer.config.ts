@@ -143,7 +143,7 @@ export const Blog = defineDocumentType(() => ({
       description: "The language of the post (en or zh)",
       default: "en",
     },
-    date: { type: "date" },
+    date: { type: "date", required: true },
     tags: { type: "list", of: { type: "string" }, default: [] },
     lastmod: { type: "date" },
     draft: { type: "boolean" },

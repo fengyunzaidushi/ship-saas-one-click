@@ -1,21 +1,35 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 
 export default function () {
     const t = useTranslations('saas_one.footer');
     const navItems = (t.raw('nav.items') as any[]) || [];
     const socialItems = (t.raw('social.items') as any[]) || [];
-    
+    const brand = t.raw('brand') as any;
+
 
     return (
         <footer className="bg-background border-t">
             <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="flex flex-row flex-wrap justify-between gap-8">
-                    {/* Newsletter */}
-                    {t('brand.description') && t('brand.title') && (
-                        <div className="flex-1 min-w-[200px] text-left">
-                            <p className="uppercase mb-6 font-bold">{t('brand.title')}</p>
-                            <div className="flex flex-col">{t('brand.description')}</div>
+                    {/* Brand Section */}
+                    {brand.description && brand.title && (
+                        <div className="flex-1 min-w-[240px] text-left">
+                            {brand.avatar && (
+                                <div className="relative group mb-6 transition-all duration-300 ease-in-out">
+                                    <Image
+                                        src="/static/images/logo-new.png"
+                                        alt={brand.avatar.title}
+                                        width={160}
+                                        height={120}
+                                        className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+                                        priority
+                                    />
+                                </div>
+                            )}
+                            <h3 className="text-lg font-bold tracking-wide mb-4">{brand.title}</h3>
+                            <div className="text-gray-600 leading-relaxed">{brand.description}</div>
                         </div>
                     )}
 

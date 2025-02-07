@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { motion } from "framer-motion";
 import Cta from "../components/Cta";
 import Faq from "../components/Faq";
@@ -10,12 +11,10 @@ import Testimonial from "../components/Testimonial";
 import dynamic from 'next/dynamic';
 
 const NameGenerator = dynamic(() => import('../components/NameGenerator'), {
-  ssr: false,
   loading: () => <div>Loading...</div>
 });
 
 const PricingOnetime = dynamic(() => import('../../../components/PricingOnetime'), {
-  ssr: false,
   loading: () => <div>Loading...</div>
 });
 
@@ -70,14 +69,16 @@ export default function ShadcnLandingPage({ locale }) {
         <Feature />
       </motion.div>
 
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={scrollVariants}
-      >
-        <PricingOnetime />
-      </motion.div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={scrollVariants}
+        >
+          <PricingOnetime />
+        </motion.div>
+      </Suspense>
 
       <motion.div
         initial="hidden"

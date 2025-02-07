@@ -9,7 +9,6 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import getRequestConfig from 'i18n/request'
 
-
 export async function generateMetadata(props: {
   params: Promise<{ tag: string }>
 }): Promise<Metadata> {
@@ -44,7 +43,7 @@ export default async function TagPage(props: { params: Promise<{ tag: string, lo
   // Capitalize first letter and convert space to dash
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
   const filteredPosts = allCoreContent(
-    sortPosts(allBlogs.filter((post) => post.tags && post.tags.map((t) => slug(t)).includes(tag)) as unknown as MDXDocumentDate[])
+    sortPosts(allBlogs.filter((post) => post.tags && post.tags.map((t) => slug(t)).includes(tag)))
   )
   if (filteredPosts.length === 0) {
     return notFound()
