@@ -19,153 +19,148 @@
   "saas_one": {
     "header": {
       "brand": {
-        "title": "Novel Character Name Generator",
+        "title": "Launch Your AI SaaS in One Click",
         "avatar": {
-          "src": "https://placehold.co/128x128",
-          "title": "Novel Character Name Generator"
+          "src": "/imgs/logo.png",
+          "title": "Ship SaaS One Click - Launch Your AI SaaS in One Click"
         },
         "url": "/"
       },
       "nav": {
         "items": [
           {
+            "title": "Features",
+            "url": "/#features",
+            "target": "_self"
+          },
+          {
             "title": "Pricing",
-            "url": "/",
-            "target": "_blank"
+            "url": "/#pricing",
+            "target": "_self"
           },
           {
-            "title": "Name Generators",
-            "url": "/name-generators",
-            "target": "_blank"
-          },
-          {
-            "title": "docs",
+            "title": "Docs",
             "url": "/docs",
             "target": "_blank"
           },
           {
-            "title": "blog",
+            "title": "Blog",
             "url": "/blog",
-            "target": "_blank"
-          },
-          {
-            "title": "tag",
-            "url": "/tags",
             "target": "_blank"
           }
         ]
       },
       "buttons": [
         {
-          "title": "Sign In",
-          "url": "/api/auth/signin?callbackUrl=%2Fname-generators",
-          "target": "_blank"
+          "title": "Get Started",
+          "url": "/api/auth/signin",
+          "target": "_self"
         }
       ]
     },
     "hero": {
-      "title": "Create Unique Names for Your Novel Characters",
-      "description": "Use the Novel Character Name Generator to easily create character names with literary style and cultural depth, helping you craft vivid characters.",
+      "title": "Launch Your AI SaaS Startup in One Click",
+      "description": "A modern AI SaaS template built with Next.js + Supabase, featuring complete user system and payment integration to help you turn ideas into products quickly.",
       "image": {
-        "title": "Novel Character Name Generator",
-        "src": "https://placehold.co/1280x500.png"
+        "src": "/imgs/hero.png",
+        "title": "Ship SaaS One Click Template"
       },
+      "tip": "Helped 100+ developers launch their SaaS projects",
       "image_position": "right",
       "text_align": "left",
-      "tip": "Start free trial now, add inspiration to your creation, and craft outstanding character names!",
       "buttons": [
         {
-          "title": "Start Free Trial Now",
-          "url": "/name-generators",
+          "title": "Start Now",
+          "url": "/docs/getting-started",
           "target": "_blank"
         },
         {
-          "title": "Vote on ProductHunt",
-          "url": "/",
+          "title": "View Demo",
+          "url": "https://demo.shipsaas.com",
           "target": "_blank",
           "theme": "outline"
         }
       ],
       "show_happy_users": true,
-      "show_proof": false
+      "show_proof": true
     },
     "section": {
       "items": [
         {
           "name": "what",
-          "title": "What is Novel Character Name Generator",
-          "description": "Novel Character Name Generator is an online tool designed for writers and creative professionals, helping generate unique and meaningful character names. By combining literary styles, cultural backgrounds, and personality traits, it provides diverse name options to help you easily create fascinating characters.",
+          "title": "Why Choose Ship SaaS One Click?",
+          "description": "We provide an all-in-one AI SaaS startup solution, letting you focus on product innovation rather than infrastructure.",
           "image": {
-            "src": "https://placehold.co/600x400.png"
+            "src": "/imgs/section-1.png"
           },
           "image_position": "left",
           "text_align": "center",
           "items": [
             {
-              "title": "Diverse Name Styles",
-              "description": "Whether it's classical, modern, or fantasy style, we can provide suitable names for you."
+              "title": "Complete User System",
+              "description": "Integrated Supabase authentication, supporting multiple third-party logins, user management made easy."
             },
             {
-              "title": "Precise Character Creation",
-              "description": "Customize names based on character personality and background to enhance story depth."
+              "title": "Internationalization Support",
+              "description": "Built-in i18n multilingual system, one-click translation for global market expansion."
             },
             {
-              "title": "Quick Online Generation",
-              "description": "Simple input, instant generation, making the creative process more efficient."
+              "title": "Payment Integration",
+              "description": "Stripe payment integration, supporting both one-time payments and subscription models."
             }
           ]
         },
         {
           "name": "why",
-          "title": "Why Choose Novel Character Name Generator",
-          "description": "Choose our Novel Character Name Generator to make your creative process smoother and help writers create vivid characters in their story world.",
+          "title": "Features Tailored for AI SaaS",
+          "description": "We understand the needs of AI SaaS entrepreneurs and provide a suite of ready-to-use AI features.",
           "image": {
-            "src": "https://placehold.co/600x400.png"
+            "src": "/imgs/section-2.png"
           },
           "image_position": "right",
           "text_align": "center",
           "items": [
             {
-              "title": "Endless Inspiration",
-              "description": "Easily find inspiration by combining cultural backgrounds and personality traits."
+              "title": "AI Landing Page Generator",
+              "description": "Generate professional product landing pages with one click, supporting multilingual conversion."
             },
             {
-              "title": "Easy to Use",
-              "description": "Simply input character personality descriptions to quickly generate names."
+              "title": "Blog & Documentation System",
+              "description": "MDX-based blog system with AI-assisted writing and translation support."
             },
             {
-              "title": "Suitable for All Creations",
-              "description": "Find perfect names for novels, scripts, or game characters."
+              "title": "AI API Integration",
+              "description": "Pre-configured OpenAI interface for quick AI feature implementation."
             }
           ]
         },
         {
           "name": "how",
-          "title": "How to Use Novel Character Name Generator",
-          "description": "Using our tool is very simple, follow these steps to generate ideal character names:",
+          "title": "Launch Your SaaS in Three Steps",
+          "description": "From zero to launch in just three simple steps:",
           "image": {
-            "src": "https://placehold.co/600x400.png"
+            "src": "/imgs/section-3.png"
           },
           "image_position": "left",
           "text_align": "center",
           "items": [
             {
-              "title": "1. Enter Character Description",
-              "description": "Provide character personality traits and background description."
+              "title": "1. Clone Template",
+              "description": "Clone the repository with one click to get the complete project structure."
             },
             {
-              "title": "2. Choose Name Style",
-              "description": "Select preferred name style, such as classical, modern, or fantasy style."
+              "title": "2. Configure Services",
+              "description": "Follow documentation to set up Supabase, Stripe, and other services."
             },
             {
-              "title": "3. Get Name Suggestions",
-              "description": "System will quickly generate multiple name suggestions based on your description."
+              "title": "3. Deploy",
+              "description": "One-click deployment to Vercel and start serving users instantly."
             }
           ],
           "buttons": [
             {
-              "title": "Try Now 👉",
-              "url": "/name-generators",
+              "title": "View Deployment Docs 👉",
+              "url": "/docs/deployment",
               "target": "_blank"
             }
           ]
@@ -173,34 +168,34 @@
       ]
     },
     "feature": {
-      "title": "Core Features of Novel Character Name Generator",
-      "description": "Explore how our tool helps you create excellent novel character names more easily.",
-      "tip": "ConvertFast offers flexible pricing options to suit developers and teams of all sizes. Start building stunning landing pages faster than ever.",
+      "title": "Why Developers Choose Us?",
+      "description": "We provide a modern tech stack and complete feature modules to help you build professional SaaS products quickly.",
+      "tip": "Over 1000+ developers have successfully launched projects using our template",
       "items": [
         {
-          "title": "Diverse Naming Styles",
-          "description": "Supports classical, modern, fantasy, and other styles, adapting to different types of novel creation.",
+          "title": "Modern Tech Stack",
+          "description": "Built with Next.js 14 + TypeScript + Tailwind CSS for the best development experience.",
           "avatar": {
             "src": "/imgs/icons/1.svg"
           }
         },
         {
-          "title": "Personalized Name Customization",
-          "description": "Generate unique names based on character personality and background.",
+          "title": "Complete User System",
+          "description": "Integrated Supabase auth and database, supporting third-party login and user management.",
           "avatar": {
             "src": "/imgs/icons/2.svg"
           }
         },
         {
-          "title": "Flexible Online Usage",
-          "description": "No download needed, access and use anytime, anywhere, quickly generate required names.",
+          "title": "i18n Support",
+          "description": "Built-in i18n system with one-click translation for global market expansion.",
           "avatar": {
             "src": "/imgs/icons/3.svg"
           }
         },
         {
-          "title": "Adapts to Multiple Creative Scenarios",
-          "description": "From novels to scripts to game development, providing comprehensive naming support.",
+          "title": "Payment System",
+          "description": "Stripe integration supporting multiple billing models for quick monetization.",
           "avatar": {
             "src": "/imgs/icons/4.svg"
           }
@@ -208,96 +203,96 @@
       ]
     },
     "cta": {
-      "title": "Can't Wait to Try Novel Character Name Generator?",
-      "description": "Start now, add inspiration to your creation, and craft outstanding character names!",
+      "title": "Ready to Launch Your SaaS Project?",
+      "description": "Start using Ship SaaS One Click now and bring your ideas to life quickly!",
       "buttons": [
         {
-          "title": "Try It Now",
-          "url": "/name-generators",
+          "title": "Start Free",
+          "url": "/docs/getting-started",
           "target": "_blank"
         }
       ]
     },
     "testimonial": {
-      "title": "User Reviews of Novel Character Name Generator",
-      "description": "See how our users evaluate this powerful creative tool.",
+      "title": "Developer Reviews",
+      "description": "See what other developers say about Ship SaaS One Click.",
       "items": [
         {
-          "name": "Li Hua",
-          "title": "Novelist",
-          "description": "This tool has been a great help, making it easy to find suitable names for characters and saving lots of time.",
+          "name": "David Chen",
+          "title": "Independent Developer",
+          "description": "This template saved me at least 2 months of development time, and now my AI SaaS has its first paying customers.",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-1.png"
           }
         },
         {
-          "name": "Wang Fang",
-          "title": "Screenwriter",
-          "description": "The creative process is smoother, with diverse name styles. Highly recommended for all writers!",
+          "name": "Sarah Zhang",
+          "title": "Technical Founder",
+          "description": "The complete i18n support helped us easily expand into international markets, now 40% of our users are from overseas.",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-2.png"
           }
         },
         {
-          "name": "Zhang Wei",
-          "title": "Game Developer",
-          "description": "Naming game characters has become so simple, and the tool generates very creative names.",
+          "name": "Michael Wang",
+          "title": "Full Stack Developer",
+          "description": "High code quality, detailed documentation, and most importantly, saved tons of time dealing with payments and authentication.",
           "avatar": {
-            "src": "https://placehold.co/60x60.png"
+            "src": "/imgs/avatars/avatar-3.png"
           }
         }
       ]
     },
     "faq": {
-      "title": "Frequently Asked Questions About Novel Character Name Generator",
-      "description": "Answers to common questions you might encounter while using our tool.",
+      "title": "Frequently Asked Questions",
+      "description": "Common questions about Ship SaaS One Click.",
       "items": [
         {
-          "title": "What styles does Novel Character Name Generator support?",
-          "description": "The tool supports classical, modern, fantasy, and many other styles to meet different creative needs."
+          "title": "What technical background do I need to use this template?",
+          "description": "If you're familiar with React and Next.js basics, you'll be able to use this template well. We provide detailed documentation for guidance."
         },
         {
-          "title": "Do I need to register to use Novel Character Name Generator?",
-          "description": "No registration needed for free use, but registering allows you to save names and access more advanced features."
+          "title": "Which deployment platforms are supported?",
+          "description": "We primarily support Vercel deployment, but also work with other platforms like Netlify, Railway, etc."
         },
         {
-          "title": "Can I generate names for different types of works?",
-          "description": "Yes, you can generate suitable names for novels, scripts, or games."
+          "title": "How can I get technical support?",
+          "description": "We provide detailed documentation and video tutorials, plus community support through GitHub Issues."
         }
       ]
     },
     "footer": {
       "brand": {
-        "title": "Novel Character Name Generator",
-        "description": "Novel Character Name Generator is an online tool created for writers and creative professionals, helping you easily generate character names with cultural and literary style.",
+        "title": "Ship SaaS One Click",
+        "description": "All-in-one AI SaaS startup template to help you launch quickly.",
         "avatar": {
-          "src": "https://placehold.co/60x60.png",
-          "title": "Novel Character Name Generator"
+          "src": "/imgs/logo.png",
+          "title": "Ship SaaS One Click"
         },
         "url": "/"
       },
       "badge_disabled": false,
-      "copyright": "© 2024 • Novel Character Name Generator All rights reserved.",
+      "copyright": "© 2024 Ship SaaS One Click • All rights reserved.",
       "social": {
         "items": [
           {
-            "title": "Weibo",
-            "url": "https://weibo.com/namingtool",
+            "title": "GitHub",
+            "url": "https://github.com/fengyunzaidushi/ship-saas-one-click",
             "target": "_blank"
           },
           {
-            "title": "ProductHunt",
-            "url": "https://www.producthunt.com/posts/novel-naming-generator",
+            "title": "Twitter",
+            "url": "https://twitter.com/shipsaasoneclick",
             "target": "_blank"
           },
           {
-            "title": "WeChat",
-            "url": "https://wechat.com/namingtool",
+            "title": "Discord",
+            "url": "https://discord.gg/shipsaas",
             "target": "_blank"
           },
           {
             "title": "Email",
-            "url": "mailto:support@namingtool.com",
+            "url": "mailto:support@shipsaas.com",
             "target": "_self"
           }
         ]
@@ -305,37 +300,47 @@
       "nav": {
         "items": [
           {
-            "title": "Products",
+            "title": "Product",
             "children": [
               {
-                "title": "Name Generator",
-                "url": "/name-generators",
+                "title": "Features",
+                "url": "/#features",
+                "target": "_self"
+              },
+              {
+                "title": "Pricing",
+                "url": "/#pricing",
+                "target": "_self"
+              },
+              {
+                "title": "Roadmap",
+                "url": "/roadmap",
                 "target": "_blank"
               }
             ]
           },
           {
-            "title": "Friend Links",
+            "title": "Resources",
             "children": [
               {
-                "title": "pagen-ai-landing-page-template",
-                "url": "https://github.com/all-in-aigc/pagen-ai-landing-page-template",
+                "title": "Documentation",
+                "url": "/docs",
                 "target": "_blank"
               },
               {
-                "title": "tailwind-nextjs-starter-blog",
-                "url": "https://github.com/timlrx/tailwind-nextjs-starter-blog",
+                "title": "Blog",
+                "url": "/blog",
                 "target": "_blank"
               },
               {
-                "title": "ship-saas-one-click",
+                "title": "GitHub",
                 "url": "https://github.com/fengyunzaidushi/ship-saas-one-click",
                 "target": "_blank"
               }
             ]
           },
           {
-            "title": "Services",
+            "title": "Legal",
             "children": [
               {
                 "title": "Privacy Policy",
@@ -351,7 +356,7 @@
       }
     },
     "usecase": {
-      "description": "Trusted by leading companies worldwide",
+      "description": "Trusted by developers worldwide",
       "items": [
         {
           "image": {

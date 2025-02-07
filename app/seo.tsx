@@ -27,7 +27,7 @@ export function genPageMetadata({
   const finalDescription = description || siteMetadata.description
   
   return {
-    title: `${title} | ${siteMetadata.title}`,
+    title: `${title}`,
     description: finalDescription,
     openGraph: {
       title: `${title} | ${siteMetadata.title}`,
