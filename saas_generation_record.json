@@ -1,0 +1,27 @@
+{
+  "hero.png": {
+    "status": "success",
+    "last_attempt": "2025-02-07T16:07:00.816158",
+    "error": null
+  },
+  "section-1.png": {
+    "status": "success",
+    "last_attempt": "2025-02-07T16:07:14.483758",
+    "error": null
+  },
+  "section-2.png": {
+    "status": "success",
+    "last_attempt": "2025-02-07T16:07:35.484781",
+    "error": null
+  },
+  "section-3.png": {
+    "status": "success",
+    "last_attempt": "2025-02-07T16:07:58.060753",
+    "error": null
+  },
+  "logo.png": {
+    "status": "success",
+    "last_attempt": "2025-02-07T16:35:10.656743",
+    "error": null
+  }
+}
